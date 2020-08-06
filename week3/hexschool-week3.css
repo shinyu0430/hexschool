@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css reset end*/
+
+body{
+  font-family:PingFang TC;
+}
+
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+.container{
+    width:  940px;
+    margin:0 auto;
+}
+/* 上方導覽列 header */
+.header{
+  display:flex;
+  justify-content:space-between;
+align-items:center;
+margin:30px 0 30px;
+}
+.header-bar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+    margin-left: 200px;
+
+}
+
+.header-bar a{
+  text-decoration: none;
+  padding:0 15px 0 15px;
+  margin-left:30px;
+  font-size:16px;
+  font-weight:bold;
+  color:#3F5D45;
+  line-height:70px;
+  display:block;
+}
+
+
+.header-bar a:hover{
+  text-decoration: underline;
+}
+.header img[alt=iphonelogo],img[alt=navimg]{
+        display:none;
+    }
+
+/* 大圖片 */
+
+
+/* 商品 */
+.product{
+  margin-top:60px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* 商品左側 */
+.product-aside {
+  width: 300px; 
+}
+.product-aside h3{
+  font-size:24px;
+  color:#EAF0ED;
+  background:#3F5D45;
+  text-align:center;
+  padding:16px 0px 16px 0px;
+  font-weight:bold;
+}
+.product-aside ul{
+  border:1px solid #EAF0ED; 
+}
+.product-aside a{
+  text-decoration: none;
+  font-size:24px;
+  font-weight:bold;
+  color:#3F5D45;
+  display:block;
+  padding:16px 0px 16px 0px;
+}
+.product-aside li{
+  color:#3F5D45;
+  font-size:24px;
+  
+  text-align:center;
+  border-top:1px solid #EAF0ED;
+}
+.product-aside li:hover{
+  background:#EAF0ED;
+}
+
+/* 商品右側 */
+.product-list { 
+
+  width:620px;
+}
+.product-list ul{ 
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space-between;
+}
+.product-list li{
+    position: relative;
+    margin-bottom:20px;
+}
+.special{
+    position: absolute;
+    left: 20px;
+    writing-mode: vertical-lr;
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-style: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.favorite{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+.productCard-text{
+    display:flex;
+    border-left: solid 1px #EAF0ED;
+    border-right: solid 1px #EAF0ED;
+}
+.productCard-text h2{
+    font-size: 20px;
+    line-height: 20px;
+    color: #3F5D45;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+.productCard-text p{
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #3F5D45; 
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 20px;
+    border-left: solid 1px #EAF0ED;  
+ 
+}
+.addCart{
+  display:block;
+  background:#EAF0ED;
+  color:#3F5D45;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  line-height:33px;
+  padding:14px 0px 14px 0px;
+}
+.addCart:hover{
+   background:#3F5D45;
+    color: #EAF0ED;
+}
+
+/* 頁數 */
+.pagenumber ul{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.pagenumber a{
+   text-align:center;
+   width: 60px;
+   height: 60px;
+   border: solid 1px #EAF0ED;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   text-decoration:none;
+   color: #3F5D45;
+  
+}
+.number:hover{
+   background:#3F5D45;
+   color:#EAF0ED;
+}
+.arrow:hover{
+   background:#EAF0ED;
+}
+
+.email{
+  display:flex;
+  align-items:center;
+  background:#3F5D45;
+}
+/* 第三週新增的部分 */
+/*下方頁面的上層*/
+
+.email{
+  margin-top:60px;
+  padding:0 250px 0 250px;
+  display:flex;
+  background:#3F5D45;
+  align-items:center;
+  justify-content:space-between;
+}
+.subscribe{
+  display:flex;
+  align-items:center;
+}
+.subscribe h2{
+  color:#EAF0ED;
+  font-size:24px;
+  line-height:29px;
+  margin-left:20px;
+}
+.emailform{
+  display:flex;
+  background:#EAF0ED;
+  align-items:center;
+  justify-content:space-between;
+  margin:30px 0 30px;
+}
+.emailform [type=email]{
+  height:53px;  
+  width:252px;
+  background:#EAF0ED;
+  border:#EAF0ED;
+}
+.mailicon{
+  margin:0 20px 0 20px;
+}
+.emailform [type=image]{
+  padding:20px 24px 20px 24px;
+  background:#FFE180; 
+}
+/*下方頁面的下層*/
+.footer{
+  display:flex;
+  background:#EAF0ED;
+  padding:0 250px 0 250px;
+  justify-content:space-between;
+}
+.contact{
+  display:flex;
+  flex-direction:column;
+}
+
+.contact img[alt="logo"]{
+  margin: 38.9px 0 115.5px;
+}
+.service{
+  color:#3F5D45;
+   line-height:24px;
+}
+
+.website{
+  margin: 30px 0 30px;
+  display:flex;
+  
+}
+.website li{
+  margin-right:8px;
+}
+.copyright{
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+}
+.copyright h2{
+  color:#3F5D45;
+  font-size:23px;
+  line-height:30px;
+ -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  letter-spacing:6px;
+}
+.copyright p{
+  color:#3F5D45;
+  font-size:16px;
+  line-height:19px;
+    margin-top:5px;
+}
+
+@media screen and (max-width:375px){
+    
+    .container{
+         width:  375px;
+    }
+    .banner{
+        width:375px;
+    }
+    
+    .header-bar{
+    display:none;
+    }
+   
+    .header{
+        justify-content: space-around;
+    }  
+    .header img[alt=pclogo]{    
+        display:none;
+    }
+    .header img[alt=iphonelogo]{
+        display:block ;
+            width:114px;
+    }
+        img[alt=navimg]{
+       display:block ;
+    }
+    .product{
+        margin-top:0px;
+        flex-direction: column;
+        align-items:center;
+    }
+    .product-aside {
+      width: 100%; 
+    }
+    .product-list ul{
+        justify-content: center;
+    }
+    .product-list { 
+        margin:30px 0 30px;
+        width:100%;
+        }
+    .pagenumber ul{
+       justify-content: center;
+    
+    }
+    .email{
+        margin-top:30px;
+        padding:30px;
+        flex-direction: column;
+    }
+    .emailform [type=email]{
+
+      width:187px;
+
+        }
+    .copyright h2{
+      display:none;  
+    }
+    .contact img[alt="logo"]{
+          margin: 38.9px 0 38px;
+        }
+    .footer{
+         padding:0 30px 30px 30px;
+        flex-direction: column;
+    }
+    
+    }
+
