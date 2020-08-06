@@ -330,6 +330,7 @@ background-size: contain;
 }
 .emailform [type=email]{
   width:252px;
+  padding:15px 0 15px;
   background:#EAF0ED;
   border:#EAF0ED;
 }
