@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*自定義的CSS*/
+
+.container{
+    width:  1200px;
+    margin-left:auto;
+    margin-right:auto;   
+}
+img{
+    display: block;
+}
+h1{
+    margin-top:40px;
+    font-size:80px;
+    margin-bottom: 50px;
+    padding-bottom:20px;
+    border-bottom: 2px solid black;
+    line-height: 95px;
+}
+h2{
+    font-size:32px;
+    line-height: 48px;
+    margin-top: 48px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid black;
+}
+
+h2 span{
+    color:#A00404;
+    font-size:24px;
+    line-height: 29px; 
+    margin-left: 14px;
+   
+}
+.profile{
+     margin-bottom: 48px;
+}
+.profile ul{
+    margin-bottom: 24px;
+}
+.profile li{
+    font-size:24px;
+    line-height: 36px;
+}
+.education ul{
+    margin-bottom: 48px;
+}
+.education li{
+    font-size:24px;
+    line-height: 33px;
+    margin-bottom: 24px;
+}
+.skills{
+    background: #415165;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 24px;
+    padding-bottom: 52px;
+}
+.skills h2{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 46px;
+    padding-bottom: 8px;
+    color:white;
+    font-size:32px;
+    line-height: 45px;
+    border-bottom: 2px solid white;
+    
+}
+.skills span{
+    color:white;
+    
+}
+.skills ul{
+    margin-left: 500px;
+    margin-right: 30px;
+    padding-left:24px;
+    border-left: 1px solid white;
+}
+.skills li{
+    color:white;
+    font-size:24px;
+    line-height: 36px;
+}
+.experience ul{
+    margin-left: 10px;
+    padding-left: 24px;
+    border-left: 1px solid;
+    margin-bottom:76px;
+}
+.experience li{
+    font-size:24px;
+    line-height: 33px;
+    margin-bottom:32px;
+}
+.experience p{
+    width: 642px;
+    margin-top:8.15px;
+    font-size:20px;
+    line-height: 30px;
+}
+.footer{
+    background: #415165;
+    text-align: center;
+    padding-bottom:48px;
+    padding-top:24px;
+}
+.footer h2{
+    color:white;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+    font-size:32px;
+    line-height: 45px;
+    border-bottom: 2px solid white;
+}
+.footer span{
+     color:white;
+}
+.footer ul{
+    margin-bottom:20px;
+}
+.footer li{
+    color:white;
+    font-size:24px;
+    line-height: 36px;
+    margin-bottom:16px;
+}
+.footer a{
+    display:inline-block;
+    margin-left:24px;
+}
