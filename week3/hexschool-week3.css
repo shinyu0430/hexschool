@@ -47,36 +47,56 @@ table {
 	border-spacing: 0;
 }
 
-/*css reset end*/
+/*-------------css reset end-------------*/
+
 
 body{
   font-family:PingFang TC;
 }
-
 img{
   display:block;
   max-width:100%;
   height:auto;
 }
 .container{
-    width:  940px;
+    max-width:  940px;
     margin:0 auto;
 }
-/* 上方導覽列 header */
+
+/*-------------header-------------*/
 .header{
   display:flex;
   justify-content:space-between;
-align-items:center;
-margin:30px 0 30px;
+  align-items:center;
+  margin:30px 0 30px;
+}
+.pclogo{
+background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+  display: block;
+  width: 300px;
+  height: 55.78px;
+  text-indent: 101%; 
+  overflow: hidden;
+  white-space: nowrap;
+background-size: contain;
+}
+.mobilelogo{
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+  display: block;
+  width: 114px;
+  height: 18px;
+  text-indent: 101%; 
+  overflow: hidden;
+  white-space: nowrap;
+background-size: contain;
 }
 .header-bar {
   display:flex;
   align-items:center;
   justify-content:space-between;
-    margin-left: 200px;
+  margin-left: 200px;
 
 }
-
 .header-bar a{
   text-decoration: none;
   padding:0 15px 0 15px;
@@ -87,30 +107,63 @@ margin:30px 0 30px;
   line-height:70px;
   display:block;
 }
-
-
 .header-bar a:hover{
   text-decoration: underline;
 }
-.header img[alt=iphonelogo],img[alt=navimg]{
+.mobilelogo,.navimg{ 
+    display:none;
+}
+/*手機版才出現*/
+/*-------------header container RWD-------------*/
+@media(max-width:992px){
+    .container{
+        max-width:892px;
+        
+    }
+     .banner{
+        margin: 0 auto;
+        width:768px;
+    }  
+}
+@media(max-width:768px){
+    .container{
+         max-width:375px;
+    }
+    .banner{
+        width:375px;
+    }  
+    .header-bar{
         display:none;
     }
+    .header{
+        justify-content: space-around;
+    }  
+    .pclogo{    
+        display:none;
+    }
+   .mobilelogo{
+        display:block;
+    }
+      .navimg{
+       display:block ;
+    }
+}
 
-/* 大圖片 */
 
 
-/* 商品 */
+/*-------------Product-------------*/
+/*-------------商品全部-------------*/
 .product{
   margin-top:60px;
   display:flex;
   justify-content:space-between;
 }
 
-/* 商品左側 */
-.product-aside {
-  width: 300px; 
+/*-------------商品左側-------------*/
+.product-menu {
+  width: 33%; 
 }
-.product-aside h3{
+.product-menu  h3{
   font-size:24px;
   color:#EAF0ED;
   background:#3F5D45;
@@ -118,10 +171,7 @@ margin:30px 0 30px;
   padding:16px 0px 16px 0px;
   font-weight:bold;
 }
-.product-aside ul{
-  border:1px solid #EAF0ED; 
-}
-.product-aside a{
+.product-menu a{
   text-decoration: none;
   font-size:24px;
   font-weight:bold;
@@ -129,28 +179,25 @@ margin:30px 0 30px;
   display:block;
   padding:16px 0px 16px 0px;
 }
-.product-aside li{
+.product-menu li{
   color:#3F5D45;
   font-size:24px;
-  
   text-align:center;
-  border-top:1px solid #EAF0ED;
+  border:1px solid #EAF0ED;
 }
-.product-aside li:hover{
+.product-menu li:hover{
   background:#EAF0ED;
 }
 
 /* 商品右側 */
-.product-list { 
 
-  width:620px;
-}
-.product-list ul{ 
+.product-list { 
+   width:66%;
    display:flex;
    flex-wrap:wrap;
-   justify-content:space-between;
+   justify-content:space-between;  
 }
-.product-list li{
+.product-list>li{
     position: relative;
     margin-bottom:20px;
 }
@@ -163,7 +210,6 @@ margin:30px 0 30px;
     font-style: 16px;
     line-height: 20px;
     font-weight: bold;
-    text-align: center;
     letter-spacing: 3px;
     padding: 10px;
 }
@@ -172,32 +218,22 @@ margin:30px 0 30px;
     right: 22px;
     top: 19px;
 }
-.productCard-text{
-    display:flex;
-    border-left: solid 1px #EAF0ED;
-    border-right: solid 1px #EAF0ED;
-}
-.productCard-text h2{
+.info{
+    text-align: center;
     font-size: 20px;
-    line-height: 20px;
+    display: flex;
     color: #3F5D45;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 33px;
-    padding-right: 33px;
 }
-.productCard-text p{
-
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #3F5D45; 
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 25px;
-    padding-right: 20px;
-    border-left: solid 1px #EAF0ED;  
- 
+.name{
+    width: 58%;
+    padding: 14px 0;
+    border-left: 1px solid #EAF0ED;
+}
+.price{
+    width: 42%;
+    padding: 14px 0;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
 }
 .addCart{
   display:block;
@@ -214,8 +250,23 @@ margin:30px 0 30px;
    background:#3F5D45;
     color: #EAF0ED;
 }
-
-/* 頁數 */
+/*-------------Product RWD-------------*/
+@media(max-width:992px){
+    .product{
+        margin-top:0px;
+        flex-direction: column;
+        align-items:center;
+    }
+    .product-menu {
+      width: 100%; 
+    }
+    .product-list{
+        width:100%;
+         justify-content:space-around;  
+    }
+   
+}
+/* -------------pagenumber-------------*/
 .pagenumber ul{
    display: flex;
    justify-content: flex-end;
@@ -240,21 +291,25 @@ margin:30px 0 30px;
 .arrow:hover{
    background:#EAF0ED;
 }
-
-.email{
-  display:flex;
-  align-items:center;
-  background:#3F5D45;
-}
-/* 第三週新增的部分 */
-/*下方頁面的上層*/
-
+/*-------------pagenumber RWD-------------*/
+@media(max-width:992px){
+    .pagenumber ul{
+       justify-content: center;
+        }
+    }
+/*-------------footer-form-------------*/
+/*email最外層*/
 .email{
   margin-top:60px;
-  padding:0 250px 0 250px;
-  display:flex;
   background:#3F5D45;
-  align-items:center;
+}
+/*email container：置中、設置寬度*/
+.footer-inner{
+  width:940px;
+  margin:0 auto;
+}
+.email .footer-inner{
+  display:flex;
   justify-content:space-between;
 }
 .subscribe{
@@ -271,11 +326,9 @@ margin:30px 0 30px;
   display:flex;
   background:#EAF0ED;
   align-items:center;
-  justify-content:space-between;
   margin:30px 0 30px;
 }
 .emailform [type=email]{
-  height:53px;  
   width:252px;
   background:#EAF0ED;
   border:#EAF0ED;
@@ -287,26 +340,56 @@ margin:30px 0 30px;
   padding:20px 24px 20px 24px;
   background:#FFE180; 
 }
-/*下方頁面的下層*/
-.footer{
+.emailform [type=image]:hover{
+  background:#ffce31; 
+}
+/*-------------footer-form RWD-------------*/
+
+@media(max-width:992px){
+    .footer-inner{
+        width:768px;
+    }
+    .email{
+        margin-top:30px;
+    }
+     
+}
+@media(max-width:768px){
+    .footer-inner{
+         width:375px;
+    }
+        .email .footer-inner{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+       
+    }
+    
+   
+}
+
+
+
+/*-------------footer-information -------------*/
+
+.information .footer-inner{
   display:flex;
-  background:#EAF0ED;
-  padding:0 250px 0 250px;
   justify-content:space-between;
+}
+.information{
+      background:#EAF0ED;
 }
 .contact{
   display:flex;
   flex-direction:column;
 }
-
 .contact img[alt="logo"]{
   margin: 38.9px 0 115.5px;
 }
 .service{
   color:#3F5D45;
-   line-height:24px;
+  line-height:24px;
 }
-
 .website{
   margin: 30px 0 30px;
   display:flex;
@@ -324,82 +407,30 @@ margin:30px 0 30px;
   color:#3F5D45;
   font-size:23px;
   line-height:30px;
- -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   letter-spacing:6px;
 }
 .copyright p{
   color:#3F5D45;
   font-size:16px;
   line-height:19px;
-    margin-top:5px;
 }
-
-@media screen and (max-width:375px){
-    
-    .container{
-         width:  375px;
+@media(max-width:768px){
+.information .footer-inner{
+  flex-direction: column;
     }
-    .banner{
-        width:375px;
-    }
-    
-    .header-bar{
-    display:none;
-    }
-   
-    .header{
-        justify-content: space-around;
-    }  
-    .header img[alt=pclogo]{    
-        display:none;
-    }
-    .header img[alt=iphonelogo]{
-        display:block ;
-            width:114px;
-    }
-        img[alt=navimg]{
-       display:block ;
-    }
-    .product{
-        margin-top:0px;
-        flex-direction: column;
-        align-items:center;
-    }
-    .product-aside {
-      width: 100%; 
-    }
-    .product-list ul{
-        justify-content: center;
-    }
-    .product-list { 
-        margin:30px 0 30px;
-        width:100%;
+.contact img[alt="logo"]{
+  margin: 38.9px 0 40px;
         }
-    .pagenumber ul{
-       justify-content: center;
+.copyright{
+  margin-top:0px;
+    }
+.copyright h2{
+  display:none;
     
     }
-    .email{
-        margin-top:30px;
-        padding:30px;
-        flex-direction: column;
-    }
-    .emailform [type=email]{
-
-      width:187px;
-
-        }
-    .copyright h2{
-      display:none;  
-    }
-    .contact img[alt="logo"]{
-          margin: 38.9px 0 38px;
-        }
-    .footer{
-         padding:0 30px 30px 30px;
-        flex-direction: column;
-    }
+}
     
-    }
+    
 
