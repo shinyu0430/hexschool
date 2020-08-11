@@ -306,7 +306,7 @@ background-size: contain;
 }
 /*email container：置中、設置寬度*/
 .footer-inner{
-  width:940px;
+  max-width: 800px;
   margin:0 auto;
 }
 .email .footer-inner{
