@@ -1,0 +1,34 @@
+/* -------------pagenumber-------------*/
+.pagenumber 
+    {
+    ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+            }
+    a{
+        text-align:center;
+        width: 60px;
+        height: 60px;
+        border: solid 1px $secondary-color;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-decoration:none;
+        color: $primary-color;
+               
+    }
+    }
+ .number:hover{
+    background:$primary-color;
+    color:$secondary-color;
+ }
+ .arrow:hover{
+    background:$secondary-color
+ }
+ /*-------------pagenumber RWD-------------*/
+ @include pad(){
+     .pagenumber ul{
+        justify-content: center;
+         }
+     }

@@ -1,0 +1,141 @@
+
+
+/*-------------footer-form-------------*/
+/*email最外層*/
+.email{
+    margin-top:60px;
+    background:$primary-color;
+  }
+  /*email container：置中、設置寬度*/
+  .footer-inner{
+    max-width:800px;
+    margin:0 auto;
+  }
+  .email .footer-inner{
+    display:flex;
+    justify-content:space-between;
+  }
+  .subscribe{
+    display:flex;
+    align-items:center;
+    h2{
+        color:$secondary-color;
+        font-size:$primary-font;
+        line-height:29px;
+        margin-left:20px;
+      }
+  }
+
+  .emailform{
+    display:flex;
+    background:$secondary-color;
+    align-items:center;
+    margin:30px 0 30px;
+    [type=email]{
+        width:252px;
+        padding:15px 0 15px;
+        background:$secondary-color;
+        border:$secondary-color;
+      }
+      [type=image]{
+        padding:20px 24px 20px 24px;
+        background:#FFE180; 
+        &:hover{
+            background:#ffce31; 
+          }
+      }
+  }
+
+  .mailicon{
+    margin:0 20px 0 20px;
+  }
+
+  /*-------------footer-form RWD-------------*/
+  
+  @include pad(){
+      .footer-inner{
+          width:768px;
+      }
+      .email{
+          margin-top:30px;
+      }
+       
+  }
+  @include mobile(){
+      .footer-inner{
+           width:375px;
+      }
+          .email .footer-inner{
+          flex-direction: column;
+          align-items: center;
+          padding-top: 30px;
+         
+      }
+      
+     
+  }
+  
+  
+  
+  /*-------------footer-information -------------*/
+  
+  .information .footer-inner{
+    display:flex;
+    justify-content:space-between;
+  }
+  .information{
+        background:$secondary-color;
+  }
+  .contact{
+    display:flex;
+    flex-direction:column;
+  }
+  .contact img[alt="logo"]{
+    margin: 38.9px 0 115.5px;
+  }
+  .service{
+    color:$primary-color;
+    line-height:24px;
+  }
+  .website{
+    margin: 30px 0 30px;
+    display:flex;
+    
+  }
+  .website li{
+    margin-right:8px;
+  }
+  .copyright{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+  }
+  .copyright h2{
+    color:$primary-color;
+    font-size:23px;
+    line-height:30px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    letter-spacing:6px;
+  }
+  .copyright p{
+    color:$primary-color;
+    font-size:$secondary-font;
+    line-height:19px;
+  }
+    /*-------------footer-information RWD-------------*/
+  @include mobile(){
+  .information .footer-inner{
+    flex-direction: column;
+      }
+  .contact img[alt="logo"]{
+    margin: 38.9px 0 40px;
+          }
+  .copyright{
+    margin-top:0px;
+      }
+  .copyright h2{
+    display:none;
+      
+      }
+  }
