@@ -190,9 +190,11 @@
 
 /*-------------checkout RWD-------------*/
 
+
 @include mobile() {
     .order {
         display: none;
+        
 
     }
 

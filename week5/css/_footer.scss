@@ -60,6 +60,7 @@
 @include pad() {
     .footer-inner {
         width: 768px;
+  
     }
 
     .email {
@@ -71,6 +72,7 @@
 @include mobile() {
     .footer-inner {
         width: 375px;
+      
     }
 
     .email .footer-inner {
@@ -144,6 +146,7 @@
     .information .footer-inner {
         flex-direction: column;
     }
+    
 
     .contact img[alt="logo"] {
         margin: 38.9px 0 40px;
