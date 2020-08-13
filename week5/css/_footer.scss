@@ -87,23 +87,22 @@
 
 /*-------------footer-information -------------*/
 
-.information .footer-inner {
-    display: flex;
-    justify-content: space-between;
-}
-
 .information {
     background: $secondary-color;
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+  }
 }
 
 .contact {
     display: flex;
     flex-direction: column;
+    img[alt="logo"] {
+      margin: 38.9px 0 115.5px;
+  }
 }
 
-.contact img[alt="logo"] {
-    margin: 38.9px 0 115.5px;
-}
 
 .service {
     color: $primary-color;
@@ -113,33 +112,32 @@
 .website {
     margin: 30px 0 30px;
     display: flex;
-
+    li {
+      margin-right: 8px;
+  }
 }
 
-.website li {
-    margin-right: 8px;
-}
 
 .copyright {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-}
-
-.copyright h2 {
-    color: $primary-color;
-    font-size: 23px;
-    line-height: 30px;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    letter-spacing: 6px;
-}
-
-.copyright p {
+    h2 {
+      color: $primary-color;
+      font-size: 23px;
+      line-height: 30px;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      letter-spacing: 6px;
+  }
+  p {
     color: $primary-color;
     font-size: $secondary-font;
     line-height: 19px;
 }
+}
+
+
 
 /*-------------footer-information RWD-------------*/
 @include mobile() {
@@ -153,10 +151,10 @@
 
     .copyright {
         margin-top: 0px;
+        h2 {
+          display: none;
+  
+      }
     }
 
-    .copyright h2 {
-        display: none;
-
-    }
 }

@@ -1,3 +1,5 @@
+
+/*-------------banner-------------*/
 .banner {
     margin-top: 34px;
 }
@@ -19,7 +21,6 @@
 }
 
 /*-------------Product-------------*/
-/*-------------商品全部-------------*/
 .product {
     margin-top: 60px;
     display: flex;
@@ -140,16 +141,18 @@
         margin-top: 0px;
         flex-direction: column;
         align-items: center;
-    }
-
-    .product-menu {
-        width: 100%;
-    }
-
-    .product-list {
+        &-menu {
+          width: 100%;
+      }
+      &-list {
         margin-top: 30px;
         width: 100%;
         justify-content: space-around;
     }
+    }
+
+   
+
+   
 
 }

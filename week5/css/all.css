@@ -138,17 +138,6 @@ img {
   .navbar {
     padding: 34px 20px 0px 20px;
   }
-  .container {
-    max-width: 892px;
-  }
-  .navimg {
-    display: block;
-  }
-  .logo {
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
-    width: 114px;
-    height: 18px;
-  }
   .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -161,6 +150,17 @@ img {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     overflow: hidden;
+  }
+  .container {
+    max-width: 892px;
+  }
+  .navimg {
+    display: block;
+  }
+  .logo {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+    width: 114px;
+    height: 18px;
   }
   .nav-link {
     padding: 10px 0;
@@ -178,6 +178,7 @@ img {
   }
 }
 
+/*-------------banner-------------*/
 .banner {
   margin-top: 34px;
 }
@@ -197,7 +198,6 @@ img {
 }
 
 /*-------------Product-------------*/
-/*-------------商品全部-------------*/
 .product {
   margin-top: 60px;
   display: -webkit-box;
@@ -600,11 +600,13 @@ img {
   font-size: 20px;
 }
 
-.order-list li:nth-child(1), .order-list li:nth-child(2) {
+.order-list li:nth-child(1),
+.order-list li:nth-child(2) {
   overflow: hidden;
 }
 
-.order-list li:nth-child(1) img, .order-list li:nth-child(2) img {
+.order-list li:nth-child(1) img,
+.order-list li:nth-child(2) img {
   margin: -40px 0 -40px 0;
 }
 
@@ -613,7 +615,8 @@ img {
   .order {
     display: none;
   }
-  .navbar, .content {
+  .navbar,
+  .content {
     padding: 0px;
   }
   .invoice {
@@ -717,6 +720,10 @@ img {
 }
 
 /*-------------footer-information -------------*/
+.information {
+  background: #EAF0ED;
+}
+
 .information .footer-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,10 +731,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.information {
-  background: #EAF0ED;
 }
 
 .contact {
