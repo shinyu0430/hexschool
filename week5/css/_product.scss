@@ -32,7 +32,7 @@
     width: 33%;
 
     h3 {
-        font-size: $primary-font;
+        font-size: $font-m;
         color: $secondary-color;
         background: $primary-color;
         text-align: center;
@@ -42,7 +42,7 @@
 
     a {
         text-decoration: none;
-        font-size: $primary-font;
+        font-size: $font-m;
         font-weight: bold;
         color: $primary-color;
         display: block;
@@ -51,7 +51,7 @@
 
     li {
         color: $primary-color;
-        font-size: $primary-font;
+        font-size: $font-m;
         text-align: center;
         border: 1px solid $secondary-color;
 
@@ -85,7 +85,7 @@
     writing-mode: vertical-lr;
     background: $primary-color;
     color: $secondary-color;
-    font-size: $secondary-font;
+    font-size: $font-s;
     font-weight: bold;
     letter-spacing: 3px;
     padding: 10px;
@@ -124,7 +124,7 @@
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    font-size: $primary-font;
+    font-size: $font-m;
     padding: 14px 0px 14px 0px;
 
     &:hover {
