@@ -59,6 +59,14 @@ img {
   height: auto;
 }
 
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.2;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -269,7 +277,6 @@ img {
   background: #3F5D45;
   color: #EAF0ED;
   font-size: 16px;
-  line-height: 20px;
   font-weight: bold;
   letter-spacing: 3px;
   padding: 10px;
@@ -311,7 +318,6 @@ img {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
-  line-height: 33px;
   padding: 14px 0px 14px 0px;
 }
 
@@ -658,7 +664,6 @@ img {
 .subscribe h2 {
   color: #EAF0ED;
   font-size: 24px;
-  line-height: 29px;
   margin-left: 20px;
 }
 
@@ -749,7 +754,6 @@ img {
 
 .service {
   color: #3F5D45;
-  line-height: 24px;
 }
 
 .website {
@@ -777,7 +781,6 @@ img {
 .copyright h2 {
   color: #3F5D45;
   font-size: 23px;
-  line-height: 30px;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -787,7 +790,6 @@ img {
 .copyright p {
   color: #3F5D45;
   font-size: 16px;
-  line-height: 19px;
 }
 
 /*-------------footer-information RWD-------------*/
