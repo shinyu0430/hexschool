@@ -1,114 +1,124 @@
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-img{
-    display:block;
-    max-width:100%;
-    height:auto;
-  }
-.container{
-      max-width: 940px;
-      margin:0 auto;
-  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 .navimg {
-  display: none;
-  border: none;
-  background: transparent;
+    display: none;
+    border: none;
+    background: transparent;
 }
- .logo{
+
+.logo {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
     display: block;
     width: 300px;
     height: 55.78px;
-    text-indent: 101%; 
+    text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
     background-size: contain;
-  }
-  .navbar {
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding-top: 34px;
     position: relative;
+
     .active {
-      max-height: 200px;
+        max-height: 200px;
     }
 
     &-nav {
-      display: flex;
-      align-items: center;
-      max-height: 0px;
+        display: flex;
+        align-items: center;
+        max-height: 0px;
     }
 
     &-collapse {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
 
 
-    &-cart{
-      padding: 30px 0 30px 30px;
+    &-cart {
+        padding: 30px 0 30px 30px;
     }
-   
-  }
- 
+
+}
+
 
 .nav-item:hover {
-  background-color: $secondary-color;
-  border-radius: 25px;
+    border-bottom: 4px solid $primary-color;
 }
+
 .nav-link {
-      color: $primary-color;
-      font-weight: bold;
-      padding: 30px;
-      display: block;
-    }
-  /*-------------layout RWD-------------*/
-
-@include pad(){
-  .navbar{
-    padding: 34px 20px 0px 20px;
-  }
-  .container{
-    max-width:892px;  
-}
- 
-  .navimg {
+    color: $primary-color;
+    font-weight: bold;
+    padding: 30px;
     display: block;
-  }
-.logo{    
-      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
-      width: 114px;
-      height: 18px;
+}
+
+/*-------------layout RWD-------------*/
+
+@include pad() {
+    .navbar {
+        padding: 34px 20px 0px 20px;
     }
 
-  .navbar-nav {
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    transition: all 0.8s;
-    overflow: hidden;
-  }
+    .container {
+        max-width: 892px;
+    }
 
-  .nav-link {
-    padding: 10px 0;
-    text-align: center;
-  }
+    .navimg {
+        display: block;
+    }
 
-  .nav-item {
-    width: 100%;
-    background: white;
-  }
- 
-  
+    .logo {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+        width: 114px;
+        height: 18px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        background: white;
+    }
+
+
 }
-@include mobile(){
-  .container{
-       max-width:375px;
-  }
-  
-  
+
+@include mobile() {
+    .container {
+        max-width: 375px;
+    }
+
+
 }

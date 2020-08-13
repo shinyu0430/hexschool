@@ -123,8 +123,7 @@ img {
 }
 
 .nav-item:hover {
-  background-color: #EAF0ED;
-  border-radius: 25px;
+  border-bottom: 4px solid #3F5D45;
 }
 
 .nav-link {
@@ -181,6 +180,20 @@ img {
 
 .banner {
   margin-top: 34px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    width: 375px;
+  }
 }
 
 /*-------------Product-------------*/

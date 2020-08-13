@@ -1,177 +1,208 @@
-.content{
-display:flex;
-justify-content: space-between;
-align-items:flex-start;
-padding:68px 80px 80px;
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 68px 80px 80px;
 
-    h2{
+    h2 {
         font-size: $font-l;
-        color:$secondary-color;
+        color: $secondary-color;
     }
 }
-.invoice{
-    display:flex;
+
+.invoice {
+    display: flex;
     flex-direction: column;
     background: $primary-color;
- 
-    width:58%;
-    &-title{
-        display:flex;
-        justify-content:space-between;
+
+    width: 58%;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin:30px 40px 30px 40px;
-      .line{
+        margin: 30px 40px 30px 40px;
+
+        .line {
             // display:inline-block;
-            width:67px;
+            width: 67px;
             height: 1px;
             background: $secondary-color;
-       }
-   
-        span{
-             color:#EAF0ED;
-             margin: 0 -2px 0 -2px;
-            }
-        .progress{
-            display:flex;
+        }
+
+        span {
+            color: #EAF0ED;
+            margin: 0 -2px 0 -2px;
+        }
+
+        .progress {
+            display: flex;
             justify-content: center;
-           align-items: center;
-      
-    }
-}
-    &-option{
-        margin:0px 40px 30px 40px;
-        display:flex;
-        li{
-            width:100%;
-            border:1px solid $secondary-color;
+            align-items: center;
+
         }
-        a{  
-            display:block;
-            text-align:center;
-            font-size:$font-sm;
-            padding:14px 0 14px 0px;
-            color:$secondary-color;
-            &:hover{
+    }
+
+    &-option {
+        margin: 0px 40px 30px 40px;
+        display: flex;
+
+        li {
+            width: 100%;
+            border: 1px solid $secondary-color;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            font-size: $font-sm;
+            padding: 14px 0 14px 0px;
+            color: $secondary-color;
+
+            &:hover {
                 background-color: $secondary-color;
-                color:$primary-color;
+                color: $primary-color;
             }
         }
     }
-    &-form{
-        margin:0px 40px 0 40px;
-        li{
-            display:flex;
+
+    &-form {
+        margin: 0px 40px 0 40px;
+
+        li {
+            display: flex;
             flex-direction: column;
         }
-        label{
+
+        label {
             margin-bottom: 8px;
-            font-size:$font-sm;
-            color:$secondary-color;
+            font-size: $font-sm;
+            color: $secondary-color;
         }
-        input{
+
+        input {
             margin-bottom: 16px;
-            padding:17px 20px 17px 20px;
+            padding: 17px 20px 17px 20px;
             background: $secondary-color;
-            border:none;
+            border: none;
         }
     }
-     [type="submit"]{
+
+    [type="submit"] {
         margin-top: 14px;
-        border:none;
-       background: #FFE180;
-       color:$primary-color;
-       padding:19px 0 13px 0px;
-       font-size:$font-m;
-       width:100%;
-        &:hover{
+        border: none;
+        background: #FFE180;
+        color: $primary-color;
+        padding: 19px 0 13px 0px;
+        font-size: $font-m;
+        width: 100%;
+
+        &:hover {
             background: #fcd556;
         }
     }
-   
+
 }
-.order{
-    border:1px solid $secondary-color;
-    width:40%;
-    color:$third-color;
-    &-sum{
-        h3{
-            font-size:$font-m;
-            padding:16px 0 16px 0;
-            text-align:center;
-            width:100%;
+
+.order {
+    border: 1px solid $secondary-color;
+    width: 40%;
+    color: $third-color;
+
+    &-sum {
+        h3 {
+            font-size: $font-m;
+            padding: 16px 0 16px 0;
+            text-align: center;
+            width: 100%;
             background: $secondary-color;
             font-weight: bold;
         }
-        ul{
-            padding:16px 20px 16px 20px;
-            
+
+        ul {
+            padding: 16px 20px 16px 20px;
+
         }
-        li{
-            display:flex;
+
+        li {
+            display: flex;
             justify-content: space-between;
             margin-bottom: 8px;
-            &:nth-child(3){
-                font-size:$font-sm;
-                font-weight:bold;
+
+            &:nth-child(3) {
+                font-size: $font-sm;
+                font-weight: bold;
                 margin-top: 16px;
             }
         }
-       
+
     }
-    &-list{
-        h3{
-            font-size:$font-m;
-            padding:16px 0 16px 0;
-            text-align:center;
-            width:100%;
+
+    &-list {
+        h3 {
+            font-size: $font-m;
+            padding: 16px 0 16px 0;
+            text-align: center;
+            width: 100%;
             background: $secondary-color;
             font-weight: bold;
         }
-        ul{
-            padding:16px 16px 0 16px;
+
+        ul {
+            padding: 16px 16px 0 16px;
         }
-        li{
-            display:flex;
+
+        li {
+            display: flex;
             align-items: center;
             margin-bottom: 16px;
         }
-        img{
-            width:120px;
+
+        img {
+            width: 120px;
         }
-        .text{
+
+        .text {
             margin-left: 20px;
             line-height: 20px;
-            p{
+
+            p {
                 font-size: $font-s;
                 margin-bottom: 2px;
             }
-            span{
+
+            span {
                 font-size: 20px;
             }
         }
-        li:nth-child(1),li:nth-child(2){
+
+        li:nth-child(1),
+        li:nth-child(2) {
             overflow: hidden;
-            img{
-                margin:-40px 0 -40px 0;
+
+            img {
+                margin: -40px 0 -40px 0;
             }
         }
     }
-   
-}
-  /*-------------checkout RWD-------------*/
-  @include pad(){
-  }
 
-  @include mobile(){
-      .order{
-          display: none;
-         
-      }
-      .navbar,.content{
+}
+
+/*-------------checkout RWD-------------*/
+@include pad() {}
+
+@include mobile() {
+    .order {
+        display: none;
+
+    }
+
+    .navbar,
+    .content {
         padding: 0px;
-      }
-      
-      .invoice{
-          width:100%;
-      }
+    }
+
+    .invoice {
+        width: 100%;
+    }
 }

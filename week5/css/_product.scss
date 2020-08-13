@@ -1,139 +1,155 @@
-.banner{
-  margin-top:34px;
+.banner {
+    margin-top: 34px;
 }
 
-@include pad(){
-  
- .banner{
-   padding-top:24px;
-    margin: 0 auto;
-    width:768px;
-}  
-@include mobile(){
-  
-  .banner{
-      width:375px;
-  } 
-} 
+@include pad() {
+
+    .banner {
+        padding-top: 24px;
+        margin: 0 auto;
+        width: 768px;
+    }
+}
+
+@include mobile() {
+
+    .banner {
+        width: 375px;
+    }
+}
+
 /*-------------Product-------------*/
 /*-------------商品全部-------------*/
-.product{
-    margin-top:60px;
-    display:flex;
-    justify-content:space-between;
-  }
-  
-  /*-------------商品左側-------------*/
-  .product-menu {
-    width: 33%; 
-    h3{
-        font-size:$primary-font;
-        color:$secondary-color;
-        background:$primary-color;
-        text-align:center;
-        padding:16px 0px 16px 0px;
-        font-weight:bold;
-      }
-      a{
-        text-decoration: none;
-        font-size:$primary-font;
-        font-weight:bold;
-        color:$primary-color;
-        display:block;
-        padding:16px 0px 16px 0px;
-      }
-      li{
-        color:$primary-color;
-        font-size:$primary-font;
-        text-align:center;
-        border:1px solid $secondary-color;
-        &:hover{
-            background:$secondary-color;
-          }
-      }
-     
-  }
+.product {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
 
-  
-  
-  
-  /* 商品右側 */
-  
-  .product-list { 
-     width:66%;
-     display:flex;
-     flex-wrap:wrap;
-     justify-content:space-between;  
-     >li{
-        position: relative;
-        margin-bottom:30px;
+/*-------------商品左側-------------*/
+.product-menu {
+    width: 33%;
+
+    h3 {
+        font-size: $primary-font;
+        color: $secondary-color;
+        background: $primary-color;
+        text-align: center;
+        padding: 16px 0px 16px 0px;
+        font-weight: bold;
     }
-  }
-  .special{
-      position: absolute;
-      left: 20px;
-      writing-mode: vertical-lr;
-      background: $primary-color;
-      color: $secondary-color;
-      font-size: $secondary-font;
-      line-height: 20px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      padding: 10px;
-  }
-  .favorite{
-      position: absolute;
-      right: 22px;
-      top: 19px;
-  }
-  .info{
-      text-align: center;
-      font-size: $font-sm;
-      display: flex;
-      color: $primary-color;
-  }
-  .name{
-      width: 58%;
-      padding: 14px 0;
-      border-left: 1px solid $secondary-color;
-  }
-  .price{
-      width: 42%;
-      padding: 14px 0;
-      border-left: 1px solid $secondary-color;
-      border-right: 1px solid $secondary-color;
-  }
-  .addCart{
-    display:block;
-    background:$secondary-color;
-    color:$primary-color;
-    text-decoration:none;
-    text-align:center;
-    font-weight:bold;
-    font-size:$primary-font;
-    line-height:33px;
-    padding:14px 0px 14px 0px;
-    &:hover{
-        background:$primary-color;
-         color: $secondary-color;
-     }
-  }
 
-  /*-------------Product RWD-------------*/
-  @include pad(){
-      .product{
-          margin-top:0px;
-          flex-direction: column;
-          align-items:center;
-      }
-      .product-menu {
-        width: 100%; 
-      }
-      .product-list{
-        margin-top:30px;
-          width:100%;
-           justify-content:space-around;  
-      }
-     
-  }
-  
+    a {
+        text-decoration: none;
+        font-size: $primary-font;
+        font-weight: bold;
+        color: $primary-color;
+        display: block;
+        padding: 16px 0px 16px 0px;
+    }
+
+    li {
+        color: $primary-color;
+        font-size: $primary-font;
+        text-align: center;
+        border: 1px solid $secondary-color;
+
+        &:hover {
+            background: $secondary-color;
+        }
+    }
+
+}
+
+
+
+
+/* 商品右側 */
+
+.product-list {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+}
+
+.special {
+    position: absolute;
+    left: 20px;
+    writing-mode: vertical-lr;
+    background: $primary-color;
+    color: $secondary-color;
+    font-size: $secondary-font;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.favorite {
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+.info {
+    text-align: center;
+    font-size: $font-sm;
+    display: flex;
+    color: $primary-color;
+}
+
+.name {
+    width: 58%;
+    padding: 14px 0;
+    border-left: 1px solid $secondary-color;
+}
+
+.price {
+    width: 42%;
+    padding: 14px 0;
+    border-left: 1px solid $secondary-color;
+    border-right: 1px solid $secondary-color;
+}
+
+.addCart {
+    display: block;
+    background: $secondary-color;
+    color: $primary-color;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: $primary-font;
+    line-height: 33px;
+    padding: 14px 0px 14px 0px;
+
+    &:hover {
+        background: $primary-color;
+        color: $secondary-color;
+    }
+}
+
+/*-------------Product RWD-------------*/
+@include pad() {
+    .product {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-menu {
+        width: 100%;
+    }
+
+    .product-list {
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
