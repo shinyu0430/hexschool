@@ -14,9 +14,7 @@
     display: flex;
     flex-direction: column;
     background: $primary-color;
-
     width: 58%;
-
     &-title {
         display: flex;
         justify-content: space-between;
@@ -31,7 +29,7 @@
         }
 
         span {
-            color: #EAF0ED;
+            color: $secondary-color;
             margin: 0 -2px 0 -2px;
         }
 
@@ -58,12 +56,13 @@
             font-size: $font-sm;
             padding: 14px 0 14px 0px;
             color: $secondary-color;
-
+            
             &:hover {
                 background-color: $secondary-color;
                 color: $primary-color;
             }
         }
+       
     }
 
     &-form {
@@ -72,6 +71,7 @@
         li {
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         label {
@@ -85,8 +85,63 @@
             padding: 17px 20px 17px 20px;
             background: $secondary-color;
             border: none;
+            
         }
-    }
+        span{
+           
+            color: $primary-color;
+            &:hover{
+                color:$third-color;
+            }
+       }
+       
+        &-credit,&-deadline,&-backnumber{
+           
+            display: flex;
+            justify-content: space-between;       
+            input{
+             
+                width:36%;
+            }      
+        }
+        &-deadline{
+            position: relative;
+            .montharrowup{
+                position: absolute;
+                top:8px;
+                left:130px;
+            }
+            .montharrowdown{
+                position: absolute;
+                top:16px;
+                left:130px;
+            }
+            .yeararrowup{
+                position: absolute;
+                top:8px;
+                right:22px;
+                
+            }
+            .yeararrowdown{
+                position: absolute;
+                top:16px;
+                right:22px;
+            }
+        }
+
+            
+        }
+        li:nth-child(1){
+            position: relative;
+           span{
+            position: absolute;
+            top:50px;
+            right:22px;
+           } 
+        }
+       
+       
+    
 
     [type="submit"] {
         margin-top: 14px;
@@ -172,7 +227,7 @@
             }
 
             span {
-                font-size: 20px;
+                font-size: $font-sm;
             }
         }
 
@@ -190,7 +245,13 @@
 
 /*-------------checkout RWD-------------*/
 
+@include pad() {
 
+    .invoice-form {
+        margin: 0px 20px 0 20px;
+    }
+   
+}
 @include mobile() {
     .order {
         display: none;
@@ -205,5 +266,8 @@
 
     .invoice {
         width: 100%;
+        &-form {
+            margin: 0px 30px 0 30px;
+        }
     }
 }
