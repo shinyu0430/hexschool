@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 34px;
+  padding-top: 30px;
   position: relative;
 }
 
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, p {
 /*-------------layout RWD-------------*/
 @media (max-width: 992px) {
   .navbar {
-    padding: 34px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
   }
   .navbar-nav {
     -webkit-box-orient: vertical;
@@ -182,26 +182,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 375px;
+    max-width: 768px;
+  }
+  .navbar {
+    padding: 0px 20px 0px 20px;
+  }
+  .content {
+    padding: 0px;
   }
 }
 
 /*-------------banner-------------*/
-.banner {
-  margin-top: 34px;
-}
-
 @media (max-width: 992px) {
   .banner {
-    padding-top: 24px;
     margin: 0 auto;
-    width: 768px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    width: 375px;
+    width: 100%;
   }
 }
 
@@ -350,6 +345,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* -------------pagenumber-------------*/
+.pagenumber {
+  margin-bottom: 30px;
+}
+
 .pagenumber ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,7 +655,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: 20px;
 }
 
-.order-list .text p {
+.order-list .text h4 {
   font-size: 16px;
   margin-bottom: 2px;
 }
@@ -686,7 +685,6 @@ h1, h2, h3, h4, h5, h6, p {
   .order {
     display: none;
   }
-  .navbar,
   .content {
     padding: 0px;
   }
@@ -772,7 +770,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 768px;
   }
   .email {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 

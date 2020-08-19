@@ -1,24 +1,15 @@
 
 /*-------------banner-------------*/
-.banner {
-    margin-top: 34px;
-}
+
 
 @include pad() {
 
     .banner {
-        padding-top: 24px;
         margin: 0 auto;
-        width: 768px;
+        width: 100%;
     }
 }
 
-@include mobile() {
-
-    .banner {
-        width: 375px;
-    }
-}
 
 /*-------------Product-------------*/
 .product {

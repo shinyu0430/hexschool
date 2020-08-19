@@ -221,7 +221,7 @@
             margin-left: 20px;
           
 
-            p {
+            h4 {
                 font-size: $font-s;
                 margin-bottom: 2px;
             }
@@ -250,19 +250,18 @@
     .invoice-form {
         margin: 0px 20px 0 20px;
     }
+    
    
 }
 @include mobile() {
     .order {
-        display: none;
-        
+        display: none;   
 
     }
-
-    .navbar,
-    .content {
-        padding: 0px;
+    .content{
+        padding:0px;
     }
+
 
     .invoice {
         width: 100%;
