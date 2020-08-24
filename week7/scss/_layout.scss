@@ -1,0 +1,41 @@
+// layout
+.logo{
+    background-image: url(../images/logo.png);
+    display: block;
+    width: 128px; 
+    height: 38px;
+    text-indent: 101%; 
+    overflow: hidden;
+    white-space: nowrap;
+    background-size: contain;
+
+    &-footer{
+        background-image: url(../images/logo-white.png);
+        display: block;
+        width: 128px; 
+        height: 38px;
+        text-indent: 101%; 
+        overflow: hidden;
+        white-space: nowrap;
+        background-size: contain;
+    }
+}
+.cart{
+    position: relative;
+    &-number{
+        position:absolute;
+        top:-10px;
+        left:10px;
+    }
+    small{
+        line-height:1.3;
+    }
+}
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,67 @@
+.index-banner{
+    background-image: url(../images/banner.png);
+    height:870px;
+    .text{
+       
+        .shopping:hover{
+                background:rgba(255, 255, 255, 0.5);
+                transition: 0.5s;
+        }   
+    }
+
+}
+.training:hover{
+    background:rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    
+}  
+.product-intro:hover {
+  -webkit-filter:brightness(0.8);
+}
+
+.card-3-pic{
+    position: relative;
+
+}
+.card-3-filter{
+    position: absolute;
+    left:0px;
+
+}
+
+.sold{
+    position: absolute;
+    left:38%;
+    top:50%;
+}
+
+.index-footer{
+    background-image: url(../images/footer.png);
+    height:600px;
+}
+@media(max-width:768px){
+    .index-banner{
+        background-position: 30% 50%;
+    }
+
+    .index-footer{
+        background-position: 50% 50%;
+    }
+
+
+}
+@media(max-width:375px){
+   
+    .index-banner{
+        height:480px;
+        background-image: url(../images/banner-mobile.png);
+
+    
+    }
+    .index-footer{
+        background-image: url(../images/footer-mobile.png);
+        height:600px;
+       
+       
+    }
+}
