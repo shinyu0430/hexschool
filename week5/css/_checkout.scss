@@ -48,6 +48,7 @@
         li {
             width: 100%;
             border: 1px solid $secondary-color;
+            
         }
 
         a {
@@ -58,8 +59,13 @@
             color: $secondary-color;
             
             &:hover {
+                
+                text-decoration: underline;
+            }
+            &.checked{
                 background-color: $secondary-color;
                 color: $primary-color;
+                
             }
         }
        

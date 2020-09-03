@@ -14188,8 +14188,8 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .index-banner {
-  background-image: url(../images/banner.png);
-  height: 870px;
+  height: 480px;
+  background-image: url(../images/banner-mobile.png);
 }
 
 .index-banner .text .shopping:hover {
@@ -14198,14 +14198,31 @@ a.text-black:hover, a.text-black:focus {
   transition: 0.5s;
 }
 
+.index-footer {
+  background-image: url(../images/footer-mobile.png);
+  height: 600px;
+}
+
+@media (min-width: 376px) {
+  .index-banner {
+    height: 870px;
+    background-image: url(../images/banner.png);
+  }
+  .index-footer {
+    background-image: url(../images/footer.png);
+    height: 600px;
+  }
+}
+
 .training:hover {
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.product-intro:hover {
-  -webkit-filter: brightness(0.8);
+.product-intro img:hover {
+  -webkit-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 .card-3-pic {
@@ -14223,33 +14240,17 @@ a.text-black:hover, a.text-black:focus {
   top: 50%;
 }
 
-.index-footer {
-  background-image: url(../images/footer.png);
-  height: 600px;
-}
-
-@media (max-width: 768px) {
-  .index-banner {
-    background-position: 30% 50%;
-  }
-  .index-footer {
-    background-position: 50% 50%;
-  }
-}
-
-@media (max-width: 375px) {
-  .index-banner {
-    height: 480px;
-    background-image: url(../images/banner-mobile.png);
-  }
-  .index-footer {
-    background-image: url(../images/footer-mobile.png);
-    height: 600px;
-  }
-}
-
 .member a:hover, .member .active {
   text-decoration: none;
   border-bottom: 2px solid #916000;
+}
+
+.personal h6 {
+  font-size: 16px;
+}
+
+.productrow img:hover {
+  -webkit-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=all.css.map */

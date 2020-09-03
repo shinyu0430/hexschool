@@ -1,3 +1,4 @@
+ /*-------------tag setting-------------*/
 a {
   text-decoration: none;
 }
@@ -12,10 +13,12 @@ body {
 h1, h2, h3, h4, h5, h6 ,p{
     line-height: 1.2;
 }
+/*-------------class setting-------------*/
 .container{
       max-width: 940px;
       margin:0 auto;
   }
+/*-------------header setting-------------*/
 .navimg {
   display: none;
   border: none;
@@ -51,11 +54,13 @@ h1, h2, h3, h4, h5, h6 ,p{
       display: flex;
       align-items: center;
     }
-
-
     &-cart{
       padding: 30px 0 30px 30px;
+      &:hover{
+        opacity: 0.7;
+      }
     }
+
    
   }
  
@@ -70,7 +75,7 @@ h1, h2, h3, h4, h5, h6 ,p{
       display: block;
     }
     
-  /*-------------layout RWD-------------*/
+  /*-------------header RWD-------------*/
 
 @include pad(){
   .navbar{
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6 ,p{
       left: 0;
       top: 100%;
       width: 100%;
-      transition: all 0.8s;
+      transition: all 1.1s;
       overflow: hidden;
     }
   }
@@ -98,7 +103,9 @@ h1, h2, h3, h4, h5, h6 ,p{
       height: 18px;
     }
 
-
+    .navbar{
+      padding:0px 80px;
+  }
 
   .nav-link {
     padding: 10px 0;
@@ -118,11 +125,148 @@ h1, h2, h3, h4, h5, h6 ,p{
   }
 
   .navbar{
-    padding:0px 20px 0px 20px;
+    padding:0px 20px;
 }
   .content {
     padding: 0px;
   }
   
   
+}
+/*-------------footer-------------*/
+/*-------------footer-form-------------*/
+
+.email {
+  margin-top: 60px;
+  background: $primary-color;
+}
+
+
+.footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.email .footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+
+  h2 {
+      color: $secondary-color;
+      font-size:$font-m;
+      margin-left: 20px;
+  }
+}
+
+.emailform {
+  display: flex;
+  background: $secondary-color;
+  align-items: center;
+  margin: 30px 0 30px;
+
+  [type=email] {
+      width: 252px;
+      padding: 15px 0 15px;
+      background: $secondary-color;
+      border: $secondary-color;
+  }
+
+  [type=image] {
+      padding: 20px 24px 20px 24px;
+      background: #FFE180;
+
+      &:hover {
+          background: #ffce31;
+      }
+  }
+}
+
+.mailicon {
+  margin: 0 20px 0 20px;
+}
+
+/*-------------footer-form RWD-------------*/
+
+@include pad() {
+  .footer-inner {
+      width: 768px;
+
+  }
+
+  .email {
+      margin-top: 0px;
+  }
+
+}
+
+@include mobile() {
+  .footer-inner {
+      width: 375px;
+    
+  }
+
+  .email .footer-inner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+
+  }
+
+
+}
+
+
+
+/*-------------footer-information -------------*/
+
+.information {
+  background: $secondary-color;
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  img[alt="logo"] {
+    margin: 38.9px 0 115.5px;
+}
+}
+
+
+.service {
+  color: $primary-color;
+}
+
+.website {
+  margin: 30px 0 30px;
+  display: flex;
+  li {
+    margin-right: 8px;
+}
+}
+
+
+.copyright {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: $primary-color;
+    font-size: 23px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: 6px;
+}
+p {
+  color: $primary-color;
+  font-size:$font-s ;
+}
 }

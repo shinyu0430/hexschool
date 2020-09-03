@@ -1,10 +1,13 @@
 
 /*-------------banner-------------*/
-
+.banner{
+    margin-bottom:60px;
+}
 
 @include pad() {
 
     .banner {
+        margin-bottom:0px;
         margin: 0 auto;
         width: 100%;
     }
@@ -13,7 +16,7 @@
 
 /*-------------Product-------------*/
 .product {
-    margin-top: 60px;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -127,14 +130,15 @@
 /*-------------Product RWD-------------*/
 @include pad() {
     .product {
-        margin-top: 0px;
+        
         flex-direction: column;
         align-items: center;
         &-menu {
           width: 100%;
+          margin-bottom: 30px;
       }
       &-list {
-        margin-top: 30px;
+       
         width: 100%;
         justify-content: space-around;
     }
