@@ -13,6 +13,7 @@ body {
 h1, h2, h3, h4, h5, h6 ,p{
     line-height: 1.2;
 }
+
 /*-------------class setting-------------*/
 .container{
       max-width: 940px;
@@ -167,17 +168,17 @@ h1, h2, h3, h4, h5, h6 ,p{
   display: flex;
   background: $secondary-color;
   align-items: center;
-  margin: 30px 0 30px;
+  margin: 30px 0;
 
   [type=email] {
-      width: 252px;
-      padding: 15px 0 15px;
+      width:100%;
+      padding: 15px 10px;
       background: $secondary-color;
       border: $secondary-color;
   }
 
   [type=image] {
-      padding: 20px 24px 20px 24px;
+      padding: 20px 24px;
       background: #FFE180;
 
       &:hover {
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6 ,p{
 }
 
 .mailicon {
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
 }
 
 /*-------------footer-form RWD-------------*/

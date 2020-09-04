@@ -9,8 +9,25 @@
         color: $secondary-color;
     }
 }
+.progress {
+    display: flex;
+    align-items: center;
+    .line {
+        width: 67px;
+        height: 1px;
+        background: $secondary-color;
+    }
 
-.invoice {
+    span {
+        color: $secondary-color;
+        margin: 0 -2px 0 -2px;
+        
+    }
+    
+
+}
+
+.checkout {
     display: flex;
     flex-direction: column;
     background: $primary-color;
@@ -21,26 +38,11 @@
         align-items: center;
         margin: 30px 40px 30px 40px;
 
-        .line {
-            // display:inline-block;
-            width: 67px;
-            height: 1px;
-            background: $secondary-color;
-        }
+       
 
-        span {
-            color: $secondary-color;
-            margin: 0 -2px 0 -2px;
-        }
-
-        .progress {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
+       
     }
-
+// checkout-3.html
     &-option {
         margin: 0px 40px 30px 40px;
         display: flex;
@@ -96,21 +98,20 @@
         span{
            
             color: $primary-color;
-            &:hover{
-                color:$third-color;
-            }
+            
        }
-       
-        &-credit,&-deadline,&-backnumber{
+    //   一行兩個的input
+       &-deadline,&-backnumber,&-name,&-address{
            
             display: flex;
             justify-content: space-between;       
             input{
              
                 width:36%;
-            }      
+            }  
         }
-        &-deadline{
+        // 有箭頭的input
+        &-deadline,&-address{
             position: relative;
             .montharrowup{
                 position: absolute;
@@ -133,33 +134,59 @@
                 top:16px;
                 right:22px;
             }
+            span:hover{
+                color:$third-color;
+            }
         }
-
-            
+        //label有兩個
+        &-name{
+            &-label{
+                width:65%;
+            display: flex;
+            justify-content: space-between; 
+            }   
         }
-        li:nth-child(1){
+        //label with checkbox
+        &-address{
+            &-label{
+                display: flex;
+                justify-content: space-between;
+                span{
+                    color:$secondary-color;
+                    font-size: $font-s;
+                }
+                
+            }
+        }
+        //信用卡號碼icon
+        &-creditnumber{
             position: relative;
            span{
             position: absolute;
             top:50px;
             right:22px;
            } 
+        }  
         }
        
        
+       
     
-
+//提交鈕
     [type="submit"] {
         margin-top: 14px;
         border: none;
         background: #FFE180;
-        color: $primary-color;
-        padding: 19px 0 13px 0px;
         font-size: $font-m;
         width: 100%;
 
         &:hover {
             background: #fcd556;
+        }
+        a{
+            display:block;
+            padding: 19px 0 13px 0px;
+            color: $primary-color;
         }
     }
 
@@ -248,12 +275,75 @@
     }
 
 }
+// checkout-success.html
+.checkout-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://bit.ly/2P7GhNd);
+    background-repeat:no-repeat;
+    background-size:940px;
+    height:460px;
+    &-text{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        .progress{
+            margin-bottom:50px;
+            .line{
+                background:$primary-color;
+                }
+                span{
+                color: $primary-color; 
+                }
+        }
+        a{
+            text-align:center;
+            
+            background: #FFE180;
+            font-size: $font-m;
+            display:block;
+            padding: 15px 100px;
+            color: $primary-color;
+            &:hover {
+                background: #fcd556;
+            }
+           
+        }
+        img{
+            margin-bottom:50px;
+            width:189px;
+            
+        }
+        &-mobile{
+            display:none;
+            a{
+                text-align:center;
+                
+                background: #FFE180;
+                font-size: $font-m;
+                display:block;
+                padding: 15px 100px;
+                color: $primary-color;
+                &:hover {
+                    background: #fcd556;
+                }
+               
+            }
+        }
+    }
+    
+   
+   
+
+}
+
 
 /*-------------checkout RWD-------------*/
 
 @include pad() {
 
-    .invoice-form {
+    .checkout-form {
         margin: 0px 20px 0 20px;
     }
     
@@ -269,10 +359,21 @@
     }
 
 
-    .invoice {
+    .checkout {
         width: 100%;
         &-form {
             margin: 0px 30px 0 30px;
         }
     }
+    .checkout-banner{
+        height:518px;
+    &-text{
+        a{
+            display:none;
+        }
+        &-mobile{
+            display:block;
+        }
+    }
+}
 }

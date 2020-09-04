@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sweetaste</title>
+    <title>六角學院：第五週主線任務</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
@@ -13,7 +13,6 @@
 <body>
 
     <div class="container">
-        <!--------- header start----------->
         <header>
             <nav class="navbar">
                 <button class="navimg">
@@ -26,47 +25,62 @@
                         <li class="nav-item"><a class="nav-link" href="product.html">甜點</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">登入</a></li>
                     </ul>
-                    <a class="navbar-cart" href="checkout.html">
+                    <a class="navbar-cart" href="checkout-1.html">
                         <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="cart">
                     </a>
+
                 </div>
             </nav>
         </header>
-         <!--------- header end----------->
-        <!--------- content start----------->
         <div class="content">
-            <div class="invoice">
-                <div class="invoice-title">
-                    <h2>發票</h2>
+            <div class="checkout">
+                <div class="checkout-title">
+                    <h2>運送</h2>
                     <div class="progress">
 
 
-                        <span class="material-icons ">check_circle</span>
-                        <div class="line"></div>
-                        <span class="material-icons">check_circle</span>
-                        <div class="line"></div>
                         <span class="material-icons">radio_button_checked</span>
+                        <div class="line"></div>
+                         <span class="material-icons">radio_button_unchecked</span>
+                        <div class="line"></div>
+                        <span class="material-icons">radio_button_unchecked</span>
 
 
                     </div>
                 </div>
 
-                <ul class="invoice-option">
-                    <li><a href="" class="checked">電子發票</a></li>
-                    <li><a href="">郵寄發票</a></li>
-                </ul>
                 <form action="">
-                    <ul class="invoice-form">
+                    <ul class="checkout-form">
                         <li>
-                            <label for="emailadd">電子郵件信箱</label>
-                            <input type="email" name="emailadd" id="emailadd" placeholder="example@email.com">
+                            <div class="checkout-form-name-label">
+                            <label for="lastname">姓氏</label>
+                            <label for="firstname">名字</label>
+                            </div>
+                            <div class="checkout-form-name">
+                            <input type="text" name="lastname" id="lastname" placeholder="王">
+                            <input type="text" name="firstname" id="firstname" placeholder="小明">
+                            </div>
                         </li>
                         <li>
-                            <label for="numberadd">統一編號（選填）</label>
-                            <input type="text" name="numberadd" id="numberadd" placeholder="12345678">
+                            <label for="phobenumber">電話</label>
+                            <input type="text" name="phonenumber" id="phonenumber" placeholder="0912-345-678">
+                        </li>
+                        <li>
+                            <label for="address">地址</label>
+                            <div class="checkout-form-address">
+                                
+                            <input type="text" name="address" id="address" placeholder="高雄市">
+                       
+                                <a href="" class=""><span class="material-icons montharrowup">arrow_drop_up</span></a>
+                                <a href="" clas=""><span class="material-icons montharrowdown">arrow_drop_down</span></a>
+                                <a href=""><span class="material-icons yeararrowup">arrow_drop_up</span></a>
+                                <a href=""><span class="material-icons yeararrowdown">arrow_drop_down</span></a>
+                            <input type="text" name="address" id="address" placeholder="新興區">
+                            </div>
+                            <input type="text" name="address" id="address" placeholder="幸福路 520 號">
                         </li>
                     </ul>
-                    <input type="submit" value="確認結帳">
+                    <button type="submit" ><a href="checkout-2.html">下一步</a></button>
                 </form>
             </div>
             <div class="order">
@@ -122,7 +136,7 @@
 
 
     </div>
-      <!--------- content end----------->
+
 
     <footer>
         <div class="email">
@@ -166,7 +180,7 @@
 
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="js/layout.js"></script>
+<script src="js/layout.js"></script>
 </body>
 
 

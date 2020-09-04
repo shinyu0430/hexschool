@@ -35,57 +35,53 @@
         <div class="content">
             <div class="checkout">
                 <div class="checkout-title">
-                    <h2>付款</h2>
-                    <div class="progress">
-
-
-                        <span class="material-icons ">check_circle</span>
-                        <div class="line"></div>
-                        <span class="material-icons">radio_button_checked</span>
-                        <div class="line"></div>
-                        <span class="material-icons">radio_button_unchecked</span>
-
-
+                   
+                        <h2>發票</h2>
+                        <div class="progress">
+    
+    
+                            <span class="material-icons ">check_circle</span>
+                            <div class="line"></div>
+                            <span class="material-icons">check_circle</span>
+                            <div class="line"></div>
+                            <span class="material-icons">radio_button_checked</span>
+    
+    
+                        </div>
                     </div>
-                </div>
+    
+                    <ul class="checkout-option">
+                        <li><a href="checkout-3-1.html" >電子發票</a></li>
+                        <li><a href="" class="checked">郵寄發票</a></li>
+                    </ul>
 
                 <form action="">
                     <ul class="checkout-form">
-                        <li class="checkout-form-creditnumber">
-                            <label for="creditnumber">信用卡卡號</label>
-                            <input type="text" name="creditnumber" id="creditnumber" placeholder="9012-3456-7890-1234">
-                            <span class="material-icons">payment</span>
-                        </li>
+                      
+                        
                         <li>
-                            <label for="creditname">持卡人姓名</label>
-                            <div class="checkout-form-name">
-                            <input type="text" name="name" id="creditname" placeholder="王">
-                            <input type="text" name="name" id="creditname2" placeholder="小明">
-                            </div>
-                        </li>
-                        <li>
-                            <label for="deadline">有效期限</label>
-                            <div class="checkout-form-deadline">
+                            <div class="checkout-form-address-label">
+                            <label for="address">地址</label>
+                            <label><input type="checkbox" id="sameaddress" name="sameaddress"><span> 同運送地址</span></label>
+                         </div>
+                            <div class="checkout-form-address">
                                 
-                            <input type="text" name="deadline" id="deadline" placeholder="月">
+                            <input type="text" name="address" id="address" placeholder="高雄市">
                        
                                 <a href="" class=""><span class="material-icons montharrowup">arrow_drop_up</span></a>
                                 <a href="" clas=""><span class="material-icons montharrowdown">arrow_drop_down</span></a>
                                 <a href=""><span class="material-icons yeararrowup">arrow_drop_up</span></a>
                                 <a href=""><span class="material-icons yeararrowdown">arrow_drop_down</span></a>
-                            <input type="text" name="deadline" id="deadline2" placeholder="年">
-                            
-                           
+                            <input type="text" name="address" id="address" placeholder="新興區">
                             </div>
+                            <input type="text" name="address" id="address" placeholder="幸福路 520 號">
                         </li>
-                        <li>
-                            <label for="backnumber">背後末三碼</label>
-                            <div class="checkout-form-backnumber">
-                            <input type="text" name="backnumber" id="backnumber" placeholder="123">  
-                            </div>
+                        <li >
+                                <label for="number">統一編號（選填）</label>
+                            <input type="text" name="number" id="number" placeholder="12345678">
                         </li>
                     </ul>
-                    <button type="submit" ><a href="checkout-3-1.html">下一步</a></button>
+                    <button type="submit" ><a href="checkout-success.html">確認結帳</a></button>
                 </form>
             </div>
             <div class="order">

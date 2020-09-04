@@ -246,18 +246,18 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0 30px;
+  margin: 30px 0;
 }
 
 .emailform [type=email] {
-  width: 252px;
-  padding: 15px 0 15px;
+  width: 100%;
+  padding: 15px 10px;
   background: #EAF0ED;
   border: #EAF0ED;
 }
 
 .emailform [type=image] {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px;
   background: #FFE180;
 }
 
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .mailicon {
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
 }
 
 /*-------------footer-form RWD-------------*/
@@ -589,7 +589,27 @@ h1, h2, h3, h4, h5, h6, p {
   color: #EAF0ED;
 }
 
-.invoice {
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress .line {
+  width: 67px;
+  height: 1px;
+  background: #EAF0ED;
+}
+
+.progress span {
+  color: #EAF0ED;
+  margin: 0 -2px 0 -2px;
+}
+
+.checkout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,7 +621,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 58%;
 }
 
-.invoice-title {
+.checkout-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,42 +634,19 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 30px 40px 30px 40px;
 }
 
-.invoice-title .line {
-  width: 67px;
-  height: 1px;
-  background: #EAF0ED;
-}
-
-.invoice-title span {
-  color: #EAF0ED;
-  margin: 0 -2px 0 -2px;
-}
-
-.invoice-title .progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.invoice-option {
+.checkout-option {
   margin: 0px 40px 30px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.invoice-option li {
+.checkout-option li {
   width: 100%;
   border: 1px solid #EAF0ED;
 }
 
-.invoice-option a {
+.checkout-option a {
   display: block;
   text-align: center;
   font-size: 20px;
@@ -657,20 +654,20 @@ h1, h2, h3, h4, h5, h6, p {
   color: #EAF0ED;
 }
 
-.invoice-option a:hover {
+.checkout-option a:hover {
   text-decoration: underline;
 }
 
-.invoice-option a.checked {
+.checkout-option a.checked {
   background-color: #EAF0ED;
   color: #3F5D45;
 }
 
-.invoice-form {
+.checkout-form {
   margin: 0px 40px 0 40px;
 }
 
-.invoice-form li {
+.checkout-form li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,28 +678,24 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 
-.invoice-form label {
+.checkout-form label {
   margin-bottom: 8px;
   font-size: 20px;
   color: #EAF0ED;
 }
 
-.invoice-form input {
+.checkout-form input {
   margin-bottom: 16px;
   padding: 17px 20px 17px 20px;
   background: #EAF0ED;
   border: none;
 }
 
-.invoice-form span {
+.checkout-form span {
   color: #3F5D45;
 }
 
-.invoice-form span:hover {
-  color: #8DA291;
-}
-
-.invoice-form-credit, .invoice-form-deadline, .invoice-form-backnumber {
+.checkout-form-deadline, .checkout-form-backnumber, .checkout-form-name, .checkout-form-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,60 +704,92 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: space-between;
 }
 
-.invoice-form-credit input, .invoice-form-deadline input, .invoice-form-backnumber input {
+.checkout-form-deadline input, .checkout-form-backnumber input, .checkout-form-name input, .checkout-form-address input {
   width: 36%;
 }
 
-.invoice-form-deadline {
+.checkout-form-deadline, .checkout-form-address {
   position: relative;
 }
 
-.invoice-form-deadline .montharrowup {
+.checkout-form-deadline .montharrowup, .checkout-form-address .montharrowup {
   position: absolute;
   top: 8px;
   left: 130px;
 }
 
-.invoice-form-deadline .montharrowdown {
+.checkout-form-deadline .montharrowdown, .checkout-form-address .montharrowdown {
   position: absolute;
   top: 16px;
   left: 130px;
 }
 
-.invoice-form-deadline .yeararrowup {
+.checkout-form-deadline .yeararrowup, .checkout-form-address .yeararrowup {
   position: absolute;
   top: 8px;
   right: 22px;
 }
 
-.invoice-form-deadline .yeararrowdown {
+.checkout-form-deadline .yeararrowdown, .checkout-form-address .yeararrowdown {
   position: absolute;
   top: 16px;
   right: 22px;
 }
 
-.invoice li:nth-child(1) {
+.checkout-form-deadline span:hover, .checkout-form-address span:hover {
+  color: #8DA291;
+}
+
+.checkout-form-name-label {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout-form-address-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout-form-address-label span {
+  color: #EAF0ED;
+  font-size: 16px;
+}
+
+.checkout-form-creditnumber {
   position: relative;
 }
 
-.invoice li:nth-child(1) span {
+.checkout-form-creditnumber span {
   position: absolute;
   top: 50px;
   right: 22px;
 }
 
-.invoice [type="submit"] {
+.checkout [type="submit"] {
   margin-top: 14px;
   border: none;
   background: #FFE180;
-  color: #3F5D45;
-  padding: 19px 0 13px 0px;
   font-size: 24px;
   width: 100%;
 }
 
-.invoice [type="submit"]:hover {
+.checkout [type="submit"]:hover {
   background: #fcd556;
+}
+
+.checkout [type="submit"] a {
+  display: block;
+  padding: 19px 0 13px 0px;
+  color: #3F5D45;
 }
 
 .order {
@@ -852,9 +877,85 @@ h1, h2, h3, h4, h5, h6, p {
   margin: -40px 0 -40px 0;
 }
 
+.checkout-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(https://bit.ly/2P7GhNd);
+  background-repeat: no-repeat;
+  background-size: 940px;
+  height: 460px;
+}
+
+.checkout-banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-banner-text .progress {
+  margin-bottom: 50px;
+}
+
+.checkout-banner-text .progress .line {
+  background: #3F5D45;
+}
+
+.checkout-banner-text .progress span {
+  color: #3F5D45;
+}
+
+.checkout-banner-text a {
+  text-align: center;
+  background: #FFE180;
+  font-size: 24px;
+  display: block;
+  padding: 15px 100px;
+  color: #3F5D45;
+}
+
+.checkout-banner-text a:hover {
+  background: #fcd556;
+}
+
+.checkout-banner-text img {
+  margin-bottom: 50px;
+  width: 189px;
+}
+
+.checkout-banner-text-mobile {
+  display: none;
+}
+
+.checkout-banner-text-mobile a {
+  text-align: center;
+  background: #FFE180;
+  font-size: 24px;
+  display: block;
+  padding: 15px 100px;
+  color: #3F5D45;
+}
+
+.checkout-banner-text-mobile a:hover {
+  background: #fcd556;
+}
+
 /*-------------checkout RWD-------------*/
 @media (max-width: 992px) {
-  .invoice-form {
+  .checkout-form {
     margin: 0px 20px 0 20px;
   }
 }
@@ -866,11 +967,20 @@ h1, h2, h3, h4, h5, h6, p {
   .content {
     padding: 0px;
   }
-  .invoice {
+  .checkout {
     width: 100%;
   }
-  .invoice-form {
+  .checkout-form {
     margin: 0px 30px 0 30px;
+  }
+  .checkout-banner {
+    height: 518px;
+  }
+  .checkout-banner-text a {
+    display: none;
+  }
+  .checkout-banner-text-mobile {
+    display: block;
   }
 }
 /*# sourceMappingURL=all.css.map */
