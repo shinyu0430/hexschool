@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .website {
-  margin: 30px 0 30px;
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,25 +715,25 @@ h1, h2, h3, h4, h5, h6, p {
 .checkout-form-deadline .montharrowup, .checkout-form-address .montharrowup {
   position: absolute;
   top: 8px;
-  left: 130px;
+  left: 35%;
 }
 
 .checkout-form-deadline .montharrowdown, .checkout-form-address .montharrowdown {
   position: absolute;
   top: 16px;
-  left: 130px;
+  left: 35%;
 }
 
 .checkout-form-deadline .yeararrowup, .checkout-form-address .yeararrowup {
   position: absolute;
   top: 8px;
-  right: 22px;
+  right: 20px;
 }
 
 .checkout-form-deadline .yeararrowdown, .checkout-form-address .yeararrowdown {
   position: absolute;
   top: 16px;
-  right: 22px;
+  right: 20px;
 }
 
 .checkout-form-deadline span:hover, .checkout-form-address span:hover {
