@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------css reset end-------*/
+.img{
+    display: block;
+}
+.container_large{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.container_small{
+    max-width: 412px;
+    margin:0 auto;
+}
+.header{
+    background-image: url(images/banner.png);
+    background-position:center;
+    height: 958px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-style: italic;
+    font-weight: bolder;
+}
+.header span{
+    font-size:24px;
+    line-height: 40px;    
+}
+.header h1{
+    font-size:80px;
+    line-height: 94px;
+    margin-bottom: 32px;
+}
+
+.header p{
+    font-size:24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+.social a{
+    margin-left: 16px;
+}
+
+.social a:nth-child(1){
+    margin-left: 0;
+}
+.social img:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+.about .container_small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.about h2{
+    font-size:64px;
+    line-height: 75px; 
+    margin-top: 64px;
+    margin-bottom: 40px;  
+}
+
+.about ul{
+    font-size:22px;
+    line-height: 36px;
+    font-weight: bold;
+    font-style: italic;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:24px 0;
+
+}
+
+.styled{
+    list-style-type: disc;
+    list-style-image: url(images/circle.png);
+    
+}
+.styled li{
+    margin-bottom: 32px;
+}
+.bottom{
+    border-bottom: 1px solid black;
+}
+.xxxd{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:64px 0;
+}
+.xxxd h2{
+    font-size:64px;
+    line-height: 75px;
+    margin-bottom: 16px;
+    font-style: italic;   
+}
+.xxxd h4{
+    font-size:24px;
+    line-height: 42px;
+    margin-bottom: 32px;   
+}
+.xxxd p{
+    font-size:20px;
+    line-height: 30px;
+    margin-bottom: 32px;
+    
+}
+
+.brandpic{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+
+}
+.brandpic img{
+    margin-bottom: 40px;
+}
+.works{
+    text-align: center;
+    padding:64px 0;
+}
+.works h2{
+    font-size:64px;
+    line-height: 75px; 
+    margin-bottom: 24px;
+    font-style: italic;
+}
+.works p{
+    margin-bottom: 56px;
+    font-size:20px;
+    line-height: 30px; 
+}
+.workspic{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 104px;
+
+}
+.works img{
+    margin-bottom: 16px;
+}
+.works img:hover{
+   box-shadow: 9px 10px 20px -12px rgba(56,52,52,1);
+}
+.works span{
+    font-size:20px;
+    line-height: 28px;
+}
+.workspic li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align:center;
+    padding: 64px 0;
+}
+
+.footer h2{
+    font-size:64px;
+    line-height: 75px; 
+    margin-bottom: 24px;
+    font-style: italic;    
+}
+.footer li{
+    margin-bottom: 16px;
+    font-size:24px;
+    line-height: 33px; 
+}
+.footer a{
+   text-decoration: none;
+    color:white;
+}
+
+.footer a:hover{
+    color:#891818;
+    transition: 0.6s;
+}

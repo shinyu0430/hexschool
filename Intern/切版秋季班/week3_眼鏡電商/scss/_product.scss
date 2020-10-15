@@ -1,0 +1,114 @@
+.productMenu{ 
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            border-left: 1px solid #DCDCDC;
+            border-right: 1px solid #DCDCDC;
+            border-bottom:8px solid transparent ;
+            width:462px;
+            
+           
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                padding: 29px 0 21px 0;
+                h4{
+                    color:black;
+                    font-weight: bold;
+                    font-size:42px;
+                    line-height: 49px;
+                    margin-left: 8px;
+                }
+
+            }
+            &:hover{
+                border-bottom:8px solid $primary-color ; 
+            }
+        }
+    }
+    .active{
+        border-bottom:8px solid $primary-color ; 
+    }
+}
+
+@include pad(){
+
+    .productMenu{ 
+        ul{
+           
+            li{
+               
+                width:256px;
+                a{
+                    padding: 19px 0 10px 0;
+                    h4{
+                        font-size:28px;
+                        line-height: 33px;
+                    } 
+                    img{
+                        width: 32px;
+                    }
+                }
+            
+            }
+        }
+    }
+
+}
+@include mobile(){
+
+    .productMenu{ 
+        ul{
+           
+            li{
+               
+                width:125px;
+                border-bottom:4px solid transparent ;
+                a{
+                    padding: 10px 0 6px 0;
+                    h4{
+                        font-size:14px;
+                        line-height: 19px;
+                    } 
+                    img{
+                        width: 14px;
+                    }
+                }
+                &:hover{
+                    border-bottom:4px solid $primary-color ; 
+                }
+            
+            }
+        }
+    }
+
+}
+
+.productBanner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    img{
+        width: 49%;
+    }
+} 
+.productBanner_mobile{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    img{
+        width: 49%;
+    }
+    } 
+@include pad(){
+    .productBanner{
+        display: none;
+    }
+    .productBanner_mobile{
+    display: flex;
+    }
+    
+}

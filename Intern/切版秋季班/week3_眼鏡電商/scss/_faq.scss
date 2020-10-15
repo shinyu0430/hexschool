@@ -1,0 +1,44 @@
+.faqList{
+    padding:80px 40px 264px 40px;
+    li{
+        h3{
+            font-size: 32px;
+            line-height: 45px;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+        p{
+            margin-left: 59px;
+            
+            
+            &:last-child{
+                margin-bottom: 40px;
+            }
+            
+        }
+    }
+   
+    
+}
+
+@include pad{
+    .faqList{
+        padding:40px 40px 64px 40px;
+    }
+    
+}
+@include mobile{
+    .faqList{
+        padding:24px 15px 16px 15px;
+        p{
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+    }
+    
+}

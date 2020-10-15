@@ -1,0 +1,57 @@
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 104px;
+    li{
+        border:1px solid;
+        color:#555555;
+        
+        a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color:#555555;
+            &:hover{
+                background-color: #000000;
+                color:white;
+            }
+        }
+    }
+}
+.pageTitle{
+    background-image: url(../img/qa.png);
+    height:304px;
+    margin-bottom: 16px;
+
+    .container{
+        height:100%;
+        display: flex;
+        align-items: flex-end;
+        h2{
+            display: flex;
+            font-weight: bold;
+            img{
+                margin-left: 16px;
+            }
+            
+        }
+      
+        
+       
+    }
+    
+}
+@include mobile(){
+    .pageTitle{  
+        .container{        
+            h2{
+                font-size: 28px;
+                line-height: 40px;
+
+            }
+            img{
+                width:20px;
+            }
+        }
+    }
+}

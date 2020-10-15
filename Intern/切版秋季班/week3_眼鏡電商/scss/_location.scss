@@ -1,0 +1,212 @@
+
+.locationSelect{
+    margin-bottom: 38px;
+    label{
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+    select{
+        border: 1px solid #CED4DA;
+        width:277px;
+        height: 36px;
+    }
+}
+.locationList{
+   margin-bottom: 304px;
+    >ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+       
+        >li{
+            width:30%;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            h4{
+                border: 1px solid #CED4DA;
+                font-size:24px;
+                line-height: 36px;
+                padding:8px 16px;
+                font-weight: bold;
+            }
+            >img{
+                width:100%;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                color:white;
+                background-color: black;
+                text-align: center;
+                padding:16px 0;
+                &:hover{
+                    background-color: $primary-dark-color;
+      
+                }
+        
+            }
+        }
+    }
+    .locationListText{
+        border: 1px solid #CED4DA;
+     
+        padding: 16px;
+        li{         
+            display: flex;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 8px;
+            img{
+                margin-right: 16px;
+                width:20px;
+            }
+        }
+        &:nth-child(){
+            margin-bottom: 0; 
+        }
+    } 
+}
+
+
+
+@include pad() {
+    .locationList{
+        margin-bottom: 104px;
+        >ul{
+            justify-content:space-between;
+            >li{
+                margin-right: 0;
+                width:46%;
+            }
+        }
+    }
+}
+    
+    @include mobile() {
+        .locationList{
+            margin-bottom: 56px;
+            >ul{
+    
+                >li{
+                    width:96%;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+.locationListSingle{
+    margin-bottom: 304px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+     >ul{
+        width:40%; 
+         >li{ 
+              
+             img{
+                 width:100%;
+             }
+             
+
+             a{
+                 display: block;
+                 text-decoration: none;
+                 color:white;
+                 background-color: black;
+                 text-align: center;
+                 padding:16px 0;
+                 &:hover{
+                     background-color: $primary-dark-color;
+       
+                 }
+         
+             }
+         }
+     }
+     .locationListText{
+         ul{
+         border: 1px solid #CED4DA;
+         padding: 16px;
+         }
+         h4{
+            border: 1px solid #CED4DA;
+            font-size: 24px;
+            line-height: 36px;
+            padding:8px 16px;
+            font-weight: bold;
+        }
+         li{ 
+             display: flex;
+             font-size: 20px;
+             line-height: 30px;
+             margin-bottom: 8px;
+             img{
+                 margin-right: 16px;
+                 width:20px;
+             }
+         }
+         &:nth-child(){
+             margin-bottom: 0; 
+         }
+     } 
+    >img{
+        width:58%;
+        height: auto;
+    }
+ }
+
+ @include pad() {
+    .locationListSingle{
+        >ul{
+            width:100%; 
+            >li{
+                >img{
+                    width:48%;
+                }
+                
+            }
+        }
+        >img{
+            width:100%;
+            margin-top: 32px;
+        }
+        .locationListText{
+            width:48%;
+           
+        }
+        
+    }
+    
+   
+    
+}
+@include mobile{
+    .locationListSingle{
+        >ul{
+   
+            >li{
+                display: block;
+                >img{
+                    width:100%;
+                  
+                }
+                
+            }
+        }
+        .locationListText{
+            width:100%;
+           
+        }
+       
+        
+    }
+    
+}

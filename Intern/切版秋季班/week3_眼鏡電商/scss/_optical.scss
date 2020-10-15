@@ -1,0 +1,75 @@
+
+
+    .opticalProductTitle{
+        h3{
+            text-align: center;
+            margin-bottom: 0;
+        }
+        h5{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    .opticalProductList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        li{
+            width:24%;
+            margin-bottom: 104px;
+            img{
+                width:100%;
+            }
+            .productText{
+                display: flex;
+                justify-content: space-between;
+                font-size: 24px;
+                line-height: 36px;
+                span:nth-child(2){
+                    color:$primary-color;
+                    font-weight: bold;
+                }
+            }
+            .productColor{
+                display: flex;
+               
+                .brown,.orange{
+                    width:24px;
+                    height:24px;
+                    background-color: #5F3E2D;
+                    border-radius: 4px;
+                    border: 2px solid transparent;
+                    &:hover{
+                        border: 2px solid black;
+                    }
+                }
+                .orange{
+                    background-color: #B75929;
+                    margin-left: 8px;
+                }
+            }
+        }
+        
+    }
+
+
+@include pad(){
+    .opticalProductList{   
+        justify-content: space-around;   
+        li{
+            width:46%;
+            margin-bottom: 72px;
+        }
+    }
+}  
+
+@include mobile(){
+    .opticalProductList{ 
+        justify-content: center;     
+        li{
+            width:95%;
+            margin-bottom: 32px;
+        }
+    }
+}  
