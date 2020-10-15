@@ -107,6 +107,7 @@ table {
     line-height: 75px; 
     margin-top: 64px;
     margin-bottom: 40px;  
+    font-weight: bold;
 }
 
 .about ul{
@@ -143,7 +144,8 @@ table {
     font-size:64px;
     line-height: 75px;
     margin-bottom: 16px;
-    font-style: italic;   
+    font-style: italic;  
+    font-weight: bold; 
 }
 .xxxd h4{
     font-size:24px;
@@ -153,7 +155,7 @@ table {
 .xxxd p{
     font-size:20px;
     line-height: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 68px;
     
 }
 
@@ -176,6 +178,7 @@ table {
     line-height: 75px; 
     margin-bottom: 24px;
     font-style: italic;
+    font-weight: bold;
 }
 .works p{
     margin-bottom: 56px;
@@ -210,18 +213,21 @@ table {
     color: white;
     text-align:center;
     padding: 64px 0;
+    font-style: italic; 
 }
 
 .footer h2{
     font-size:64px;
     line-height: 75px; 
     margin-bottom: 24px;
-    font-style: italic;    
+    font-weight: bold;
+       
 }
 .footer li{
     margin-bottom: 16px;
     font-size:24px;
     line-height: 33px; 
+
 }
 .footer a{
    text-decoration: none;
