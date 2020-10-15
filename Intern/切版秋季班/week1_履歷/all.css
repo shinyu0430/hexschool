@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*css reset end*/
+/*----css reset end-----*/
 
 .container{
     width:1200px;
@@ -72,12 +72,14 @@ table {
     border-bottom: 1px solid black;
     padding-bottom: 8px;
     margin-bottom: 16px;
+    font-weight: bold;
 }
+
 .container span{
     font-size:24px;
-    line-height: 28px;
     color:#A00404;
     margin-left: 16px;
+    vertical-align:top;
 }
 
 .profile ul{
@@ -110,16 +112,21 @@ table {
     width:200px;
     margin:0 auto;
 }
+.skills li{
+    margin-bottom: 20px;
+}
 .workexperience ul{
     border-left: 1px solid #96A9C4;
     padding-left:24px;
     width:642px;
 }
 .workexperience li{
-    margin-bottom:24px;
+    margin-bottom:24px;   
 }
 .workexperience h3{
     margin-bottom:8px;
+    font-weight: bold;
+
 }
 .workexperience p{
     font-size:20px;
@@ -136,13 +143,19 @@ table {
 .footer ul{
     margin-bottom: 24px;
 }
+.footer li{
+    margin-bottom: 16px;
+}
 .footer a{
     text-decoration: none;
     color:white;
 }
 .footer a:hover{
-   color:antiquewhite;
+   color:rgb(177, 167, 155);
 }
 .footer_icon :nth-child(2){
     margin: 12px;
+}
+.footer_icon img:hover{
+    transform: scale(1.04);
 }
