@@ -34,7 +34,7 @@ body{
 }
 @include pad() {
     .container{
-        max-width: 992px;
+        max-width: 690px;
         h3{
             font-size:32px;
             line-height: 48px;
@@ -43,7 +43,7 @@ body{
 }
 @include mobile() {
     .container{
-        max-width: 375px;
+        max-width: 345px;
         h3{
             font-size:24px;
             line-height: 33px;
@@ -127,6 +127,7 @@ img{
         }
     }
 }
+//漢堡選單
 .header_mobile{
     position: absolute;
     width:100%;
@@ -156,7 +157,6 @@ img{
 
 }
 @include mobile(){
-
     .show{
         display: block;
     }
@@ -170,71 +170,70 @@ img{
     background-color:$primary-color;
     padding:40px 20px;
     color:white;
-    .footer_contact{
-        display: flex;
-        justify-content: space-between;
-        .navbar{
-            .contactInfo{
+}
+.footer_contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 19px;
+                
+            a{
+                display: flex;
+                color:white;
+                text-decoration: none; 
+                font-size:36px;
+                line-height: 42px;
+                border-bottom:1px solid transparent;
+                img{
+                    margin-right: 12px;
+                }
+                &:hover{ 
+                    color:#650300;
+                } 
+            }
+        }
             
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 24px;
-                li{
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 19px;
-                    img{
-                        margin-right: 12px;
-                    }
-                    a{
-                        color:white;
-                        text-decoration: none; 
-                        font-size:36px;
-                        line-height: 42px;
-                        border-bottom:1px solid transparent;
-                        &:hover{ 
-                            color:#650300;
-                        } 
-                    }
-                }
-                
-            }
-            .contactNav{
-                display: flex;
-                margin-bottom: 37px;
-                li{
-                    margin-right: 48px;
-                    a{
-                        color:white;
-                        text-decoration: none;
-                        display:block;
-                        padding:10px 0;
-                        font-size:16px;
-                        line-height:22px;
-                        border-bottom:1px solid transparent;
-                        &:hover{
-                            border-bottom:1px solid white;
-                        }
-                    }
+}
+.contactNav{
+        display: flex;
+        margin-bottom: 37px;
+        li{
+            margin-right: 48px;
+            a{
+                color:white;
+                text-decoration: none;
+                display:block;
+                padding:10px 0;
+                font-size:16px;
+                line-height:22px;
+                border-bottom:1px solid transparent;
+                &:hover{
+                        border-bottom:1px solid white;
                 }
             }
         }
-            .social{
-                display: flex;
-                li{
-                    margin-left: 48px;
-                    img:hover{
-                        transform: scale(1.2);
-                    }
-                }
-
-            }
-                
-        }
-        
-    }
+}
     
-    .copyright{
+.social{
+        display: flex;
+        li{
+            margin-left: 48px;
+            img:hover{
+                    transform: scale(1.2);
+            }
+        }
+}
+            
+    
+
+    
+.copyright{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -262,21 +261,11 @@ img{
         .footer_logo_mobile{
             display: none;
         }
-    }
+}
     
 
 
 @include pad() {
-    .footer{
-  
-    .footer_contact{
-        .navbar{  
-            .contactNav{
-                li{
-                    margin-right: 40px;
-                }
-                    
-            }
             .contactInfo{
                 li{
                     a{
@@ -289,11 +278,9 @@ img{
                  }
             }
         
-        } 
+        
         .social{
-           
-                margin-top: 10px;
-            
+                margin-top: 10px;          
             li{
                 margin-left: 24px;
                 img{
@@ -303,9 +290,8 @@ img{
             }
             
         } 
-    }
+    
         .copyright{
-        
             .copyrightEng{
                     a{
                         display:none;
@@ -315,23 +301,31 @@ img{
             .footer_logo_mobile{
                 display: none;
             }     
-            }  
+        }  
            
     
-}
+
 }
 @include mobile{
-    .footer{
-        .footer_contact{
-            .navbar{  
+
                 .contactNav{
                     display: none;
                  }
-            }
-            .social{
-                margin-top: 0;
-            }
-        }
+                .social{
+                    margin-top: 0;
+                }
+                .contactInfo{
+                    li{
+                        a{
+                            font-size:16px;
+                            line-height: 19px;               
+                        }
+                        img{
+                            width:20px;
+                        }
+                     }
+                }
+        
 
             .copyright{
                 flex-direction: column;
@@ -361,8 +355,7 @@ img{
                 }
             }
         
-    }
+    
 }
 // footer----end-----
-
 // layout----end-----

@@ -1,7 +1,9 @@
+
+// pages----start-----
 .pages{
     display: flex;
     justify-content: center;
-    margin-bottom: 104px;
+    margin-bottom: 156px;
     li{
         border:1px solid;
         color:#555555;
@@ -18,6 +20,20 @@
         }
     }
 }
+@include pad(){
+    .pages{
+        margin-bottom: 104px;
+    }
+}
+@include mobile(){
+    .pages{
+        margin-bottom: 56px;
+    }
+
+}
+
+// pages----end-----
+// pageTitle----start-----
 .pageTitle{
     background-image: url(../img/qa.png);
     height:304px;
@@ -55,3 +71,4 @@
         }
     }
 }
+// pageTitle----end-----

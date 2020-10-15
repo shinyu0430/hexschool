@@ -1,3 +1,4 @@
+// index----start-----
 .banner{
     background-image: url(../img/index/banner.png);
     height:840px;
@@ -66,7 +67,7 @@
     h3{
         color:$primary-dark-color;
         text-align:center;
-     
+        margin-bottom: 60px;
         }   
     ul{
         display: flex;
@@ -97,6 +98,9 @@
 }
 @include pad() {
     .intro{
+        h3{
+            margin-bottom: 32px;
+        }
         ul{
             justify-content: space-around;
             
@@ -107,6 +111,7 @@
             h5{
                 font-size: 25px;
                 line-height: 30px;
+                margin-bottom: 8px; 
             }
         }
     }
@@ -114,7 +119,9 @@
 
 @include mobile() {
     .intro{
-        
+        h3{
+            margin-bottom: 20px;
+        }
         li{
             
             width:80%;
@@ -136,7 +143,7 @@
         color:$primary-dark-color;
         text-align:center;  
         font-weight: bold;
-
+        margin-bottom: 60px;
     }
     li{
         display: flex;
@@ -185,7 +192,9 @@
 
 @include pad() {
 .glasses{   
-    padding:64px 39px;
+    h3{
+        margin-bottom: 32px;
+    }
     li{
         margin-bottom: 8px;
         a{
@@ -221,6 +230,7 @@
             color:$primary-dark-color;
             text-align:center;  
             font-weight: bold;
+            margin-bottom: 20px;
     
         }
        li{
@@ -240,6 +250,10 @@
                 margin-right: 8px;
                 
                 }
+            &:hover{
+                transition: 0.3s;
+                transform: scale(1.04);
+            }
             }
             &:first-child{
                 a{
@@ -247,6 +261,7 @@
                     left:30%; 
                 }
             }
+            
        }
             
         
@@ -263,11 +278,15 @@
 }
 
 .jointname{
-    padding:64px 0 80px 0;
     background-image: url(../img/index/bg.png);
+    padding:64px 0 80px 0;
+
+    
+    
     h3{
         text-align: center;
         color: white;
+        margin-bottom: 60px;
     }
     ul{
         display: flex;
@@ -310,14 +329,17 @@
         }
         
         
+    
     }
 }
 
 @include pad() {
     .jointname{ 
-             
+
+        h3{
+            margin-bottom: 32px;
+        }
         ul{
-            justify-content: space-around;
             li{
                 h4{
                     font-size:32px;
@@ -339,33 +361,41 @@
                     }
                 }  
              }
-        } 
+        
+    } 
     }
 }
 
 @include mobile() {
     .jointname{
         padding:32px 0;
+
+        
+        h3{
+            margin-bottom: 20px;
+        }
         ul{
             li{
-                width:90%;
+                width:100%;
                 margin-bottom: 8px;
                 img{
                     width:100%;
                 }
             }
-        }
+        
     }
+}
 }
 
 
 
 .recommend{
-    padding:64px 39px;
+    padding:64px 0px;
     h3{
         color:$primary-dark-color;
         text-align:center;  
         font-weight: bold;
+        margin-bottom: 60px;
     }
     ul{
         display: flex;
@@ -375,7 +405,7 @@
     li{
         border:1px solid #DEE2E6;
         width:23%;  
-        margin-bottom: 29px;
+       
         img{
             width:100%;
         }
@@ -399,10 +429,12 @@
 
 @include pad() {
     .recommend{
-        ul{
-            justify-content: space-around;
+        h3{
+            margin-bottom: 32px;
         }
+       
         li{
+            margin-bottom: 28px;
             width:45%;
         }
     }
@@ -411,8 +443,12 @@
 
 @include mobile() {
     .recommend{
+        h3{
+            margin-bottom: 20px;
+        }
         li{
             width: 100%;
+            margin-bottom: 16px;
         }
     }
 }
@@ -420,7 +456,7 @@
 
 .contactForm{
     background-color: #AA06010D;
-    padding: 64px;
+    padding: 64px 0;
     .container{
         max-width: 730px;
     }
@@ -445,14 +481,12 @@
         // 避免影響到checkbox
         >input{
             border: 1px solid black;
-            width:95%;
             margin-bottom: 16px;  
             padding:14px 16px;      
         }
         textarea{
             resize: none;
             margin-bottom: 16px; 
-            width:95%;
             padding:14px 16px;   
             border: 1px solid black; 
         }
@@ -486,11 +520,14 @@
         .container{
             max-width: 450px;
         }
-            form{
+        h3{
+            margin-bottom: 16px;
+        }
+        form{
                 label{
                     font-size: 14px;
                     line-height: 20px;
-                }
+        }
         
     }
     }
@@ -500,6 +537,11 @@
 @include mobile() {
     .contactForm{
         padding: 32px 15px;
+        .container{
+                h3{
+                    margin-bottom: 20px;
+                }
+        }
         form{
             >input{
                 width:90%;
@@ -510,3 +552,4 @@
         }
     }
 }
+// index----end-----

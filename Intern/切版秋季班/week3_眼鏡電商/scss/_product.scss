@@ -6,9 +6,7 @@
             border-left: 1px solid #DCDCDC;
             border-right: 1px solid #DCDCDC;
             border-bottom:8px solid transparent ;
-            width:462px;
-            
-           
+            width:462px;                     
             a{
                 display: flex;
                 justify-content: center;
@@ -38,9 +36,7 @@
 
     .productMenu{ 
         ul{
-           
-            li{
-               
+            li{ 
                 width:256px;
                 a{
                     padding: 19px 0 10px 0;
@@ -62,7 +58,6 @@
 
     .productMenu{ 
         ul{
-           
             li{
                
                 width:125px;
@@ -82,6 +77,9 @@
                 }
             
             }
+        }
+        .active{
+            border-bottom:4px solid $primary-color ; 
         }
     }
 

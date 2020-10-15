@@ -1,9 +1,7 @@
 
-
     .opticalProductTitle{
         h3{
             text-align: center;
-            margin-bottom: 0;
         }
         h5{
             text-align: center;
@@ -13,8 +11,7 @@
     .opticalProductList{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        
+        justify-content: space-between;      
         li{
             width:24%;
             margin-bottom: 104px;
@@ -33,7 +30,6 @@
             }
             .productColor{
                 display: flex;
-               
                 .brown,.orange{
                     width:24px;
                     height:24px;
@@ -55,11 +51,22 @@
 
 
 @include pad(){
-    .opticalProductList{   
-        justify-content: space-around;   
+    .opticalProductList{    
         li{
             width:46%;
             margin-bottom: 72px;
+            .productText{
+                font-size: 16px;
+                line-height: 19px;
+
+            }
+            .productColor{
+                .brown,.orange{
+                    width:16px;
+                    height:16px;
+                }
+
+            }
         }
     }
 }  

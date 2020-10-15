@@ -71,6 +71,10 @@
 
 
 @include pad() {
+
+.locationSelect{
+    margin-bottom: 24px;
+}
     .locationList{
         margin-bottom: 104px;
         >ul{
@@ -84,10 +88,17 @@
 }
     
     @include mobile() {
+        .locationSelect{
+            margin-bottom: 20px;
+            label{
+                margin-right: 0px;
+            }
+        }
+     
         .locationList{
             margin-bottom: 56px;
             >ul{
-    
+                justify-content:center;
                 >li{
                     width:96%;
                 }
