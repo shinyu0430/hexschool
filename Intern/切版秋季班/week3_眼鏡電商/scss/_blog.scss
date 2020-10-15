@@ -8,6 +8,7 @@
     }
     .nav{
         display: flex;
+        justify-content: center;
         li{
             margin-right: 48px;
         }
@@ -26,6 +27,16 @@
     .mobileHide{
         display: none;
     }
+    .blogMenu{
+        .nav{
+            li{
+                margin: 0 6px;
+            }
+            a{
+                padding:24px 0;
+            }
+     }
+    }
 }
 // blog--all--end-----
 // blog--list--start-----
@@ -39,8 +50,8 @@
             margin-right: 30px;
             width: 60%;
             height:60%;
-            &:hover{
-                box-shadow: 9px 6px 18px -4px rgba(0,0,0,0.75);
+            img:hover{
+                outline: 4px solid $primary-dark-color;
             }
         }
     }  
@@ -48,10 +59,18 @@
 .blogListText{
     position: relative;
     width: 50%;
+    a{
+        text-decoration: none;
+        
+    }
     h4{
         font-size: 32px;
         line-height: 45px;
         color: $primary-dark-color;
+        &:hover{
+            color:$primary-color;
+        }
+        
     }
     .more{
        font-weight: bold;
@@ -61,7 +80,6 @@
        color:$primary-dark-color;
        bottom:0;
        right:0;
-       text-decoration: none;
        &:hover{
            text-decoration: underline;
        }
@@ -69,9 +87,12 @@
     p{
         font-size: 20px;
         line-height: 30px;
-        span{
+        a{
             display: none;
             font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
     
@@ -102,7 +123,7 @@
     p{
         font-size: 14px;
         line-height: 21px;
-        span{
+        a{
             display: inline;
             color:#555555;
             font-size: 14px;
@@ -276,7 +297,12 @@
             color:$primary-dark-color;
         }
     }
+    
 }
+.foot{
+    display: none;
+}
+
 @include pad(){
     .contentText{
         >a{
@@ -319,8 +345,14 @@
     }
 }
 @include mobile(){
+    .side{
+        display: none;
+    }
+    .foot{
+        display: block;
+    }
     .contentText{
-       
+        width:100%;
         h2{
             font-size: 20px;
             line-height: 28px;
@@ -334,9 +366,31 @@
             }
         }
     }
-    .contentTags{
-            display: none;
+  
+    .contentOther{
+        flex-direction: column;
+        margin-bottom: 40px;
+        a{
+            margin-bottom: 8px;
+            &:last-child{
+                justify-content: flex-end;
+                flex-direction:row-reverse;
+               
+                img{
+                    margin-left: 0;
+                }
+                
+            }
         }
+       
+    }
+    .contentTags{
+        width:100%;
+        margin-bottom: 56px;
+        a{
+            margin-right: 8px;
+        }
+    }
     
 }
 
